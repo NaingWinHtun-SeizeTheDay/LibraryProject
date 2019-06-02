@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="primary_image_height">160dp</dimen>
+
+    <!--Text-->
+    <dimen name="text_medium_small">8dp</dimen>
+    <dimen name="text_medium">18dp</dimen>
+    <dimen name="text_large">24dp</dimen>
+
+    <!--Padding-->
+    <dimen name="padding_tiny">2dp</dimen>
+    <dimen name="padding_small">4dp</dimen>
+    <dimen name="padding_medium_small">8dp</dimen>
+    <dimen name="padding_medium">16dp</dimen>
+    <dimen name="padding_large">24dp</dimen>
+
+    <!--Margin-->
+    <dimen name="margin_tiny">2dp</dimen>
+    <dimen name="margin_small">4dp</dimen>
+    <dimen name="margin_medium_small">8dp</dimen>
+    <dimen name="margin_medium">16dp</dimen>
+    <dimen name="divider_line_height">1dp</dimen>
+</resources>
