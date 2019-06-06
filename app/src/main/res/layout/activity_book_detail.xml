@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <ImageView
+                android:id="@+id/iv_half_layout"
+                android:background="@color/colorBookDetail"
+                android:layout_width="match_parent"
+                android:layout_height="360dp">
+        </ImageView>
+
+        <TextView
+                android:textSize="@dimen/text_medium"
+                android:text="@string/text_edition"
+                android:textStyle="bold"
+                style="@style/BlackShadow"
+                android:id="@+id/tv_book_detail_edition"
+                android:layout_above="@id/tv_book_detail_edition_number"
+                android:layout_alignLeft="@id/tv_book_detail_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        <TextView
+                android:textSize="@dimen/text_large"
+                android:layout_alignLeft="@id/tv_book_detail_edition"
+                android:text="@string/edition_text"
+                style="@style/BlackShadow"
+                android:id="@+id/tv_book_detail_edition_number"
+                android:layout_above="@id/tv_book_detail_availability"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        <TextView
+                android:textSize="@dimen/text_medium"
+                android:text="@string/text_local_availability"
+                android:textStyle="bold"
+                style="@style/BlackShadow"
+                android:id="@+id/tv_book_detail_availability"
+                android:layout_marginTop="@dimen/margin_medium"
+                android:layout_above="@id/tv_book_detail_availability_number"
+                android:layout_alignLeft="@id/tv_book_detail_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        <TextView
+                style="@style/BlackShadow"
+                android:textSize="@dimen/text_extra_small"
+                android:layout_alignLeft="@id/tv_book_detail_edition"
+                android:text="@string/text_available"
+                android:id="@+id/tv_book_detail_availability_number"
+                android:layout_above="@id/tv_book_detail_rating"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        <TextView
+                android:textSize="@dimen/text_medium"
+                android:text="@string/text_rating"
+                android:textStyle="bold"
+                style="@style/BlackShadow"
+                android:id="@+id/tv_book_detail_rating"
+                android:layout_marginTop="@dimen/margin_medium"
+                android:layout_above="@id/tv_book_detail_rating_number"
+                android:layout_alignLeft="@id/tv_book_detail_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        <TextView
+                style="@style/BlackShadow"
+                android:textSize="@dimen/text_extra"
+                android:layout_alignLeft="@id/tv_book_detail_edition"
+                android:text="@string/rating_number"
+                android:id="@+id/tv_book_detail_rating_number"
+                android:layout_alignBottom="@id/iv_half_layout"
+                android:textStyle="bold"
+                android:layout_marginBottom="@dimen/margin_small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        <android.support.design.widget.FloatingActionButton
+                android:id="@+id/fab_book_detail_addtocard"
+                android:layout_alignParentRight="true"
+                android:layout_margin="@dimen/margin_medium_small"
+                android:tint="@color/icons"
+                android:backgroundTint="@color/primary_white"
+                android:src="@drawable/ic_add_shopping_cart_black_24dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        <ImageView
+                android:id="@+id/iv_book_detail_cover"
+                android:layout_width="@dimen/book_detail_cover_width"
+                android:src="@drawable/books_old_reading"
+                android:scaleType="centerCrop"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="140dp"
+                android:foreground="@drawable/ripple"
+                android:clickable="true"
+                android:layout_marginRight="@dimen/margin_medium"
+                android:layout_height="@dimen/book_detail_cover_height"/>
+
+        <TextView
+                android:id="@+id/tv_book_detail_name"
+                android:text="@string/books_name"
+                android:paddingRight="@dimen/padding_tiny"
+                android:textSize="24dp"
+                android:textStyle="bold"
+                android:textIsSelectable="true"
+                android:textColor="@color/primary_black"
+                android:layout_marginLeft="@dimen/margin_medium"
+                android:layout_marginTop="@dimen/margin_medium_small"
+                android:layout_below="@id/iv_book_detail_cover"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        <TextView
+                android:id="@+id/tv_book_detail_author_name"
+                android:layout_below="@id/tv_book_detail_name"
+                android:text="@string/book_author_name"
+                android:textSize="@dimen/text_medium"
+                android:textColor="@color/primary_black"
+                android:layout_alignLeft="@id/tv_book_detail_name"
+                android:layout_width="wrap_content"
+                android:layout_marginTop="@dimen/margin_medium"
+                android:textIsSelectable="true"
+                android:layout_height="wrap_content"/>
+
+        <TextView
+                android:id="@+id/tv_book_detail_isbn"
+                android:layout_below="@id/tv_book_detail_author_name"
+                android:text="@string/text_isbn"
+                android:textSize="@dimen/text_medium"
+                android:layout_alignLeft="@id/tv_book_detail_name"
+                android:layout_width="wrap_content"
+                android:layout_marginTop="@dimen/margin_small"
+                android:textIsSelectable="true"
+                android:layout_height="wrap_content"
+                android:textColor="@color/primary_black"/>
+
+        <TextView
+                android:layout_marginTop="@dimen/margin_medium"
+                android:layout_below="@id/tv_book_detail_isbn"
+                android:layout_alignLeft="@id/tv_book_detail_name"
+                android:id="@+id/tv_book_detail_text"
+                android:paddingRight="@dimen/padding_small"
+                android:textSize="@dimen/text_medium"
+                android:lineSpacingMultiplier="1.2"
+                android:text="@string/demo_text"
+                android:textColor="@color/primary_text"
+                android:layout_width="match_parent"
+                android:paddingBottom="@dimen/padding_tiny"
+                android:textIsSelectable="true"
+                android:layout_height="wrap_content"/>
+
+        <TextView
+                android:background="@color/divider"
+                android:layout_marginTop="@dimen/margin_medium"
+                android:layout_below="@id/tv_book_detail_text"
+                android:id="@+id/tv_book_detail_divider"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/divider_line_height"/>
+
+        <Button
+                android:layout_below="@+id/tv_book_detail_divider"
+                android:foreground="@drawable/ripple"
+                android:id="@+id/btn_book_detail_read"
+                android:background="@android:color/transparent"
+                android:textAllCaps="false"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_large"
+                android:text="@string/text_read"/>
+    </RelativeLayout>
+</ScrollView>

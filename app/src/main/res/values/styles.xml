@@ -22,4 +22,13 @@
         <item name="android:shadowRadius">6</item>
     </style>
 
+    <style name="WhiteShadow">
+        <item name="android:shadowColor">@color/primary_white</item>
+        <item name="android:textColor">@color/primary_black</item>
+        <item name="android:shadowDx">2</item>
+        <item name="android:shadowDy">2</item>
+        <item name="android:padding">@dimen/padding_tiny</item>
+        <item name="android:shadowRadius">6</item>
+    </style>
+
 </resources>

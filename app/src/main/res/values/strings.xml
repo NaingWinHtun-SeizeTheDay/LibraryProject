@@ -1,7 +1,16 @@
 <resources>
     <string name="app_name">Library</string>
-    <string name="book_number">Number 10</string>
+    <string name="book_number">Number 1000000000000000</string>
     <string name="demo_text">There are a lot of barriers to changing your mind: ego, overconfidence, inertia — and cost.
+        Politicians who flip-flop get mocked; family and friends who cross tribal borders are shunned. But shouldn’t we
+        be encouraging people to change their minds? And how can we get better at it ourselves?There are a lot of
+        barriers to changing your mind: ego, overconfidence, inertia — and cost.
+        Politicians who flip-flop get mocked; family and friends who cross tribal borders are shunned. But shouldn’t we
+        be encouraging people to change their minds? And how can we get better at it ourselves?There are a lot of
+        barriers to changing your mind: ego, overconfidence, inertia — and cost.
+        Politicians who flip-flop get mocked; family and friends who cross tribal borders are shunned. But shouldn’t we
+        be encouraging people to change their minds? And how can we get better at it ourselves?There are a lot of
+        barriers to changing your mind: ego, overconfidence, inertia — and cost.
         Politicians who flip-flop get mocked; family and friends who cross tribal borders are shunned. But shouldn’t we
         be encouraging people to change their minds? And how can we get better at it ourselves?
     </string>
@@ -10,4 +19,16 @@
     <string name="books_name">Books Glasses Vase</string>
     <string name="book_author_name">Wallpaper Craft</string>
     <string name="text_read">Read</string>
+    <string name="text_isbn">ISBN:9781581573268</string>
+    <string name="text_edition">Edition</string>
+    <string name="edition_text">First Edition</string>
+    <string name="text_local_availability">Local Availability</string>
+    <string name="text_available">0 (of 1)</string>
+    <string name="text_rating">Rating</string>
+    <string name="rating_number">4.5</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="text_technology">Technology</string>
+    <string name="number_sixty_six">66</string>
 </resources>

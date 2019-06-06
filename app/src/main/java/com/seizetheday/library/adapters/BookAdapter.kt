@@ -9,8 +9,9 @@ import com.seizetheday.library.viewholders.PrimaryBookViewHolder
 class BookAdapter : RecyclerView.Adapter<PrimaryBookViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, position: Int): PrimaryBookViewHolder {
-        return PrimaryBookViewHolder(LayoutInflater.from(parent.context).inflate(R.layout.book_primary, parent, false))
-
+        return PrimaryBookViewHolder(
+            LayoutInflater.from(parent.context).inflate(R.layout.viewholder_blog_post, parent, false)
+        )
     }
 
     override fun onBindViewHolder(p0: PrimaryBookViewHolder, p1: Int) {

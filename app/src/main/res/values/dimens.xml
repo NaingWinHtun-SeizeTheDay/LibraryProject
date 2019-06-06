@@ -6,6 +6,8 @@
     <dimen name="text_medium_small">8dp</dimen>
     <dimen name="text_medium">18dp</dimen>
     <dimen name="text_large">24dp</dimen>
+    <dimen name="text_extra_small">32dp</dimen>
+    <dimen name="text_extra">48dp</dimen>
 
     <!--Padding-->
     <dimen name="padding_tiny">2dp</dimen>
@@ -19,5 +21,9 @@
     <dimen name="margin_small">4dp</dimen>
     <dimen name="margin_medium_small">8dp</dimen>
     <dimen name="margin_medium">16dp</dimen>
+    <dimen name="margin_medium_large">24dp</dimen>
+
     <dimen name="divider_line_height">1dp</dimen>
+    <dimen name="book_detail_cover_width">140dp</dimen>
+    <dimen name="book_detail_cover_height">260dp</dimen>
 </resources>

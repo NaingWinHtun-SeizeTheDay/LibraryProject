@@ -50,17 +50,29 @@
                 android:paddingBottom="@dimen/padding_small"
                 android:layout_height="wrap_content"/>
 
+        <RatingBar
+                android:layout_width="wrap_content"
+                style="@style/Widget.AppCompat.RatingBar.Small"
+                android:numStars="5"
+                android:stepSize="0.5"
+                android:rating="3.4"
+                android:id="@+id/rb_secondary_book"
+                android:layout_below="@id/tv_secondary_book_author_name"
+                android:layout_alignLeft="@id/tv_secondary_book_author_name"
+                android:layout_height="wrap_content"/>
+
         <TextView
                 android:id="@+id/tv_secondary_book_description"
                 android:layout_alignLeft="@id/tv_secondary_book_name"
-                android:layout_marginTop="@dimen/margin_medium_small"
+                android:paddingTop="@dimen/padding_tiny"
+                android:paddingBottom="@dimen/padding_tiny"
                 android:maxLines="3"
                 android:ellipsize="end"
                 android:text="@string/demo_text"
-                android:lineSpacingMultiplier="1.1"
+                android:lineSpacingMultiplier="1.2"
                 android:layout_marginRight="@dimen/margin_medium"
                 android:textSize="@dimen/text_medium"
-                android:layout_below="@id/tv_secondary_book_author_name"
+                android:layout_below="@id/rb_secondary_book"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"/>
 
