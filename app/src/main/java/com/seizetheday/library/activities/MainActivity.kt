@@ -1,11 +1,10 @@
 package com.seizetheday.library.activities
 
+import android.content.Intent
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
-import android.support.v7.widget.LinearLayoutManager
-import android.support.v7.widget.RecyclerView
 import com.seizetheday.library.R
-import com.seizetheday.library.adapters.BookAdapter
+import com.seizetheday.library.adapters.MainPagerAdapter
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -14,8 +13,14 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        rv_book_list.layoutManager = LinearLayoutManager(this) as RecyclerView.LayoutManager?
-        rv_book_list.adapter = BookAdapter()
+        vp_main.adapter = MainPagerAdapter(supportFragmentManager)
+        tl_main.setupWithViewPager(vp_main)
+
+        //click to profile activity
+        iv_profile_main.setOnClickListener {
+            startActivity(Intent(this@MainActivity, ProfileActivity::class.java))
+            finish()
+        }
 
     }
 }

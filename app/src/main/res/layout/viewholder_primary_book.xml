@@ -53,28 +53,12 @@
         <TextView
                 android:layout_width="wrap_content"
                 android:text="@string/book_number"
-                android:ellipsize="end"
-                android:maxEms="6"
                 android:singleLine="true"
                 android:layout_below="@id/iv_primary_book_cover"
                 android:id="@+id/tv_primary_book_number"
                 android:layout_marginLeft="@dimen/margin_medium"
                 android:layout_marginTop="@dimen/margin_medium_small"
                 android:textSize="@dimen/text_medium"
-                android:layout_height="wrap_content"/>
-
-        <RatingBar
-                android:id="@+id/rb_primary_book"
-                android:layout_toRightOf="@+id/tv_primary_book_number"
-                android:layout_width="wrap_content"
-                style="@style/Widget.AppCompat.RatingBar.Small"
-                android:paddingTop="@dimen/padding_small"
-                android:layout_alignTop="@id/tv_primary_book_number"
-                android:layout_marginLeft="@dimen/margin_medium_small"
-                android:numStars="5"
-                android:stepSize="0.5"
-                android:rating="3"
-                android:layout_alignBottom="@+id/tv_primary_book_number"
                 android:layout_height="wrap_content"/>
 
         <TextView

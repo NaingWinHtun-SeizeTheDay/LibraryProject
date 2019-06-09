@@ -10,7 +10,7 @@ class BookAdapter : RecyclerView.Adapter<PrimaryBookViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, position: Int): PrimaryBookViewHolder {
         return PrimaryBookViewHolder(
-            LayoutInflater.from(parent.context).inflate(R.layout.viewholder_blog_post, parent, false)
+            LayoutInflater.from(parent.context).inflate(R.layout.viewholder_secondary_book, parent, false)
         )
     }
 
