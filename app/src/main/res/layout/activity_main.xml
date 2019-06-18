@@ -27,19 +27,24 @@
                         android:src="@drawable/ic_account_circle_black_24dp"
                         android:layout_width="?attr/actionBarSize"
                         android:padding="@dimen/padding_medium_small"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:foreground="@drawable/ripple"
                         android:background="@color/colorPrimaryDark"
-                        android:layout_height="?attr/actionBarSize"/>
+                        android:layout_height="?attr/actionBarSize"
+                        android:contentDescription="@string/text_profile_icon"/>
 
                 <android.support.v7.widget.SearchView
                         android:id="@+id/search_view"
                         app:searchIcon="@null"
-                        android:layout_toRightOf="@id/iv_profile_main"
+                        android:layout_toEndOf="@id/iv_profile_main"
                         android:clickable="true"
                         app:iconifiedByDefault="false"
                         app:queryHint="@string/text_search"
                         android:layout_width="match_parent"
                         android:background="@color/colorPrimaryDark"
-                        android:layout_height="?attr/actionBarSize"/>
+                        android:layout_height="?attr/actionBarSize"
+                        android:focusable="true"/>
 
             </RelativeLayout>
 
@@ -54,6 +59,8 @@
 
         <android.support.design.widget.TabLayout
                 android:id="@+id/tl_main"
+                app:tabSelectedTextColor="@color/primary_black"
+                app:tabIndicatorColor="@color/primary_black"
                 android:layout_width="match_parent"
                 android:layout_height="?attr/actionBarSize"/>
 

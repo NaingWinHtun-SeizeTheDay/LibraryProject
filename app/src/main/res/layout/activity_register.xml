@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_gravity="center"
+        android:padding="@dimen/padding_medium"
+        android:layout_height="wrap_content">
+
+    <android.support.v7.widget.CardView
+            android:id="@+id/cv_register"
+            android:layout_width="wrap_content"
+            android:layout_centerHorizontal="true"
+            app:cardUseCompatPadding="true"
+            app:cardElevation="4dp"
+            android:layout_height="wrap_content">
+
+        <ImageView
+                android:contentDescription="@string/text_app_logo"
+                android:id="@+id/iv_register"
+                android:scaleType="centerCrop"
+                android:src="@drawable/library"
+                android:layout_width="@dimen/logo_width_and_size"
+                android:layout_height="@dimen/logo_width_and_size"/>
+    </android.support.v7.widget.CardView>
+
+    <TextView
+            android:id="@+id/tv_register"
+            android:text="@string/text_register"
+            style="@style/BlackShadow"
+            android:textAlignment="center"
+            android:layout_width="match_parent"
+            android:textSize="@dimen/margin_medium_large"
+            android:layout_marginTop="@dimen/margin_medium"
+            android:layout_below="@id/cv_register"
+            android:layout_height="wrap_content"/>
+
+    <android.support.design.widget.TextInputLayout
+            android:id="@+id/til_register_user_name"
+            android:layout_width="match_parent"
+            android:layout_below="@id/tv_register"
+            android:hint="@string/text_user_name"
+            android:layout_marginTop="@dimen/margin_medium_extra_large"
+            android:layout_height="wrap_content">
+
+        <android.support.design.widget.TextInputEditText
+                android:id="@+id/tit_register_user_name"
+                android:textColorHint="@color/primary_text"
+                android:layout_width="match_parent"
+                android:drawablePadding="@dimen/padding_medium_small"
+                android:textSize="@dimen/text_medium"
+                android:drawableStart="@drawable/ic_person_outline_primary_color_24dp"
+                android:singleLine="true"
+                android:layout_height="match_parent"/>
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+            android:id="@+id/til_register_email"
+            android:layout_width="match_parent"
+            android:layout_below="@id/til_register_user_name"
+            android:hint="@string/text_email"
+            android:layout_marginTop="@dimen/margin_small"
+            android:layout_height="wrap_content">
+
+        <android.support.design.widget.TextInputEditText
+                android:id="@+id/tit_register_email"
+                android:textColorHint="@color/primary_text"
+                android:layout_width="match_parent"
+                android:drawablePadding="@dimen/padding_medium_small"
+                android:textSize="@dimen/text_medium"
+                android:drawableStart="@drawable/ic_mail_outline_primary_color_24dp"
+                android:singleLine="true"
+                android:layout_height="match_parent"/>
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+            android:id="@+id/til_register_password"
+            android:layout_width="match_parent"
+            android:layout_below="@id/til_register_email"
+            android:hint="@string/text_password"
+            android:layout_marginTop="@dimen/margin_small"
+            android:layout_height="wrap_content">
+
+        <android.support.design.widget.TextInputEditText
+                android:id="@+id/tit_register_password"
+                android:singleLine="true"
+                android:textColorHint="@color/primary_text"
+                android:drawablePadding="@dimen/padding_medium_small"
+                android:textSize="@dimen/text_medium"
+                android:drawableStart="@drawable/ic_lock_outline_primary_color_24dp"
+                android:layout_width="match_parent"
+                android:inputType="textPassword"
+                android:layout_height="match_parent"/>
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+            android:id="@+id/til_register_confirm_password"
+            android:layout_width="match_parent"
+            android:layout_below="@id/til_register_password"
+            android:hint="@string/text_confirm_password"
+            android:layout_marginTop="@dimen/margin_small"
+            android:layout_height="wrap_content">
+
+        <android.support.design.widget.TextInputEditText
+                android:id="@+id/tit_register_confirm_password"
+                android:textColorHint="@color/primary_text"
+                android:layout_width="match_parent"
+                android:drawablePadding="@dimen/padding_medium_small"
+                android:textSize="@dimen/text_medium"
+                android:inputType="textPassword"
+                android:drawableStart="@drawable/ic_lock_outline_primary_color_24dp"
+                android:singleLine="true"
+                android:layout_height="match_parent"/>
+
+    </android.support.design.widget.TextInputLayout>
+
+    <CheckBox
+            android:id="@+id/cb_register_show_password"
+            android:text="@string/text_show_password"
+            android:layout_below="@id/til_register_confirm_password"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="@dimen/margin_small"
+            android:layout_marginBottom="@dimen/margin_small"
+            android:layout_height="wrap_content"/>
+
+    <Button
+            android:id="@+id/btn_register"
+            android:text="@string/text_register"
+            android:textStyle="bold"
+            android:layout_below="@id/cb_register_show_password"
+            android:textAllCaps="false"
+            android:textSize="@dimen/text_medium"
+            android:background="@color/colorPrimaryTransparent"
+            android:foreground="@drawable/ripple"
+            android:layout_marginTop="@dimen/margin_small"
+            android:layout_marginBottom="@dimen/margin_medium_extra_large"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="true"/>
+
+    <TextView
+            android:text="@string/have_an_account"
+            android:id="@+id/tv_have_an_account"
+            android:layout_below="@id/btn_register"
+            android:layout_centerHorizontal="true"
+            android:textSize="@dimen/text_medium"
+            android:layout_marginTop="@dimen/margin_medium_small"
+            android:textColor="@color/secondary_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    <TextView
+            android:id="@+id/tv_register_login"
+            android:text="@string/text_login"
+            android:textSize="@dimen/text_medium"
+            android:textColor="@color/primary_text"
+            android:layout_marginStart="@dimen/margin_small"
+            android:layout_toEndOf="@id/tv_have_an_account"
+            android:layout_alignBottom="@id/tv_have_an_account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+</RelativeLayout>

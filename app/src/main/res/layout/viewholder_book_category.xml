@@ -3,14 +3,17 @@
         xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
         android:padding="@dimen/padding_medium_small"
-        android:layout_height="wrap_content">
+        android:clickable="true"
+        android:foreground="@drawable/ripple"
+        android:layout_height="wrap_content"
+        android:focusable="true">
 
     <TextView
             android:id="@+id/tv_book_category_name"
             android:layout_width="match_parent"
             android:text="@string/text_technology"
             android:singleLine="true"
-            android:layout_toLeftOf="@id/tv_book_category_number"
+            android:layout_toStartOf="@id/tv_book_category_number"
             android:textSize="@dimen/text_medium"
             android:padding="@dimen/padding_small"
             android:textColor="@color/primary_text"
@@ -26,7 +29,7 @@
             android:layout_marginRight="@dimen/margin_medium_small"
             android:textColor="@color/primary_text"
             android:padding="@dimen/padding_small"
-            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
             android:layout_height="wrap_content"/>
 
 </RelativeLayout>

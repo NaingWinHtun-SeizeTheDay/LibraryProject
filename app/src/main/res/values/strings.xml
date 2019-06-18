@@ -1,7 +1,20 @@
 <resources>
     <string name="app_name">Library</string>
     <string name="book_number">Number 1000</string>
-    <string name="demo_text">There are a lot of barriers to changing your mind: ego, overconfidence, inertia — and cost.
+    <string name="demo_text">
+        There are a lot of barriers to changing your mind: ego, overconfidence, inertia — and cost.
+        Politicians who flip-flop get mocked; family and friends who cross tribal borders are shunned. But shouldn’t we
+        be encouraging people to change their minds? And how can we get better at it ourselves?There are a lot of
+        barriers to changing your mind: ego, overconfidence, inertia — and cost.
+        Politicians who flip-flop get mocked; family and friends who cross tribal borders are shunned. But shouldn’t we
+        be encouraging people to change their minds? And how can we get better at it ourselves?There are a lot of
+        barriers to changing your mind: ego, overconfidence, inertia — and cost.
+        Politicians who flip-flop get mocked; family and friends who cross tribal borders are shunned. But shouldn’t we
+        be encouraging people to change their minds? And how can we get better at it ourselves?There are a lot of
+        barriers to changing your mind: ego, overconfidence, inertia — and cost.
+        Politicians who flip-flop get mocked; family and friends who cross tribal borders are shunned. But shouldn’t we
+        be encouraging people to change their minds? And how can we get better at it ourselves?There are a lot of
+        barriers to changing your mind: ego, overconfidence, inertia — and cost.
         Politicians who flip-flop get mocked; family and friends who cross tribal borders are shunned. But shouldn’t we
         be encouraging people to change their minds? And how can we get better at it ourselves?There are a lot of
         barriers to changing your mind: ego, overconfidence, inertia — and cost.
@@ -30,7 +43,26 @@
     <string name="text_technology">Technology</string>
     <string name="number_sixty_six">66</string>
 
-    <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="text_search">Search...</string>
+    <string name="text_bookmark">BookMark</string>
+    <string name="text_login">Login</string>
+    <string name="text_password">Password</string>
+    <string name="have_an_account">Already have an account?</string>
+    <string name="text_show_password">Show Password</string>
+    <string name="text_app_logo">App Logo</string>
+    <string name="text_user_name">User name</string>
+    <string name="text_forget_password">Forget password?</string>
+    <string name="text_register">Register</string>
+    <string name="create_account">Don\'t have any account.</string>
+    <string name="text_email">E-mail</string>
+    <string name="text_confirm_password">Confirm password</string>
+    <string name="text_blog_post_image">Blog post image</string>
+    <string name="text_book_cover">Book Cover</string>
+    <string name="text_blank_image_view">Blank Image View</string>
+    <string name="text_profile_icon">Profile Icon</string>
+    <string name="text_book_mark_cover">Profile Book mark cover.</string>
+    <string name="text_mail">someone@gmail.com</string>
+    <string name="text_profile_cover">Profile cover image</string>
+    <string name="user_name">User Name</string>
 </resources>

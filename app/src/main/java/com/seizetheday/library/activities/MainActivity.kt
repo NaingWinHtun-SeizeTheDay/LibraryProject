@@ -7,7 +7,7 @@ import com.seizetheday.library.R
 import com.seizetheday.library.adapters.MainPagerAdapter
 import kotlinx.android.synthetic.main.activity_main.*
 
-class MainActivity : AppCompatActivity() {
+class MainActivity : BaseActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -19,7 +19,6 @@ class MainActivity : AppCompatActivity() {
         //click to profile activity
         iv_profile_main.setOnClickListener {
             startActivity(Intent(this@MainActivity, ProfileActivity::class.java))
-            finish()
         }
 
     }

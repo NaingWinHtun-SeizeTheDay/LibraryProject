@@ -1,9 +1,58 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
+<android.support.design.widget.CoordinatorLayout
         xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        tools:context=".activities.ProfileActivity">
+        android:layout_height="match_parent">
 
-</android.support.constraint.ConstraintLayout>
+    <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+                android:layout_width="match_parent"
+                app:contentScrim="@color/colorPrimary"
+                app:layout_scrollFlags="scroll|exitUntilCollapsed"
+                android:layout_height="wrap_content">
+
+            <ImageView
+                    android:id="@+id/imageViewCollapsing"
+                    android:layout_width="match_parent"
+                    android:layout_height="120sp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/books_glasses_vase"
+                    android:contentDescription="@string/text_profile_cover"/>
+
+            <android.support.v7.widget.Toolbar
+                    app:layout_collapseMode="pin"
+                    android:layout_width="match_parent"
+                    app:subtitle="@string/text_mail"
+                    android:layout_gravity="bottom"
+                    app:titleTextColor="@color/primary_white"
+                    android:layout_height="?attr/actionBarSize">
+
+                <TextView
+                        android:textSize="@dimen/text_large"
+                        style="@style/WhiteShadow"
+                        android:id="@+id/tv_profile_user_name"
+                        android:text="@string/user_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+            </android.support.v7.widget.Toolbar>
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v7.widget.RecyclerView
+            android:layout_marginStart="@dimen/margin_tiny"
+            android:layout_marginEnd="@dimen/margin_tiny"
+            app:layout_behavior="android.support.design.widget.AppBarLayout$ScrollingViewBehavior"
+            android:id="@+id/rv_profile"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="?attr/actionBarSize"
+            android:layout_height="match_parent">
+    </android.support.v7.widget.RecyclerView>
+
+</android.support.design.widget.CoordinatorLayout>
