@@ -32,6 +32,5 @@
     <dimen name="width_secondary_book_cover">120sp</dimen>
     <dimen name="logo_width_and_size">60sp</dimen>
     <dimen name="padding_zero">0sp</dimen>
-    <dimen name="profile_book_mark_width">120sp</dimen>
-    <dimen name="profile_book_mark_height">200sp</dimen>
+    <dimen name="profile_book_mark_height">200dp</dimen>
 </resources>

@@ -42,7 +42,94 @@ class HomeFragment : Fragment(), PrimaryBookDelegate, SecondaryBookDelegate {
         var mBooksVO: BooksVO?
 
         mBooksVO = BooksVO()
+        mBooksVO.bookId = 1000
+        mBooksVO.bookCoverImage = R.drawable.books_board_chalk_inscription_school
+        mBooksVO.bookName = "Nothing"
+        mBooksVO.bookAuthorName = "Naing Win Htun"
+        mBooksVO.bookNumber = "1"
+        mBooksVO.bookDescription =
+            "There are a lot of barriers to changing your mind: ego, overconfidence, inertia — and cost.\n" +
+                    "        Politicians who flip-flop get mocked; family and friends who cross tribal borders are shunned. But shouldn’t we\n" +
+                    "        be encouraging people to change their minds? And how can we get better at it ourselves?There are a lot of\n" +
+                    "        barriers to changing your mind: ego, overconfidence, inertia — and cost.\n" +
+                    "        Politicians who flip-flop get mocked; family and friends who cross tribal borders are shunned. But shouldn’t we\n" +
+                    "        be encouraging people to change their minds? And how can we get better at it ourselves?There are a lot of\n" +
+                    "        barriers to changing your mind: ego, overconfidence, inertia — and cost.\n" +
+                    "        Politicians who flip-flop get mocked; family and friends who cross tribal borders are shunned. But shouldn’t we\n" +
+                    "        be encouraging people to change their minds? And how can we get better at it ourselves?There are a lot of\n" +
+                    "        barriers to changing your mind: ego, overconfidence, inertia — and cost.\n" +
+                    "        Politicians who flip-flop get mocked; family and friends who cross tribal borders are shunned. But shouldn’t we\n" +
+                    "        be encouraging people to change their minds? And how can we get better at it ourselves?"
 
+        mBookList.add(mBooksVO)
+
+        mBooksVO = BooksVO()
+        mBooksVO.bookId = 1000
+        mBooksVO.bookCoverImage = R.drawable.books_cover_background
+        mBooksVO.bookName = "Nothing"
+        mBooksVO.bookAuthorName = "Naing Win Htun"
+        mBooksVO.bookNumber = "1"
+        mBooksVO.bookDescription =
+            "There are a lot of barriers to changing your mind: ego, overconfidence, inertia — and cost.\n" +
+                    "        Politicians who flip-flop get mocked; family and friends who cross tribal borders are shunned. But shouldn’t we\n" +
+                    "        be encouraging people to change their minds? And how can we get better at it ourselves?There are a lot of\n" +
+                    "        barriers to changing your mind: ego, overconfidence, inertia — and cost.\n" +
+                    "        Politicians who flip-flop get mocked; family and friends who cross tribal borders are shunned. But shouldn’t we\n" +
+                    "        be encouraging people to change their minds? And how can we get better at it ourselves?There are a lot of\n" +
+                    "        barriers to changing your mind: ego, overconfidence, inertia — and cost.\n" +
+                    "        Politicians who flip-flop get mocked; family and friends who cross tribal borders are shunned. But shouldn’t we\n" +
+                    "        be encouraging people to change their minds? And how can we get better at it ourselves?There are a lot of\n" +
+                    "        barriers to changing your mind: ego, overconfidence, inertia — and cost.\n" +
+                    "        Politicians who flip-flop get mocked; family and friends who cross tribal borders are shunned. But shouldn’t we\n" +
+                    "        be encouraging people to change their minds? And how can we get better at it ourselves?"
+
+        mBookList.add(mBooksVO)
+
+        mBooksVO = BooksVO()
+        mBooksVO.bookId = 1000
+        mBooksVO.bookCoverImage = R.drawable.books_glasses_vase
+        mBooksVO.bookName = "Nothing"
+        mBooksVO.bookAuthorName = "Naing Win Htun"
+        mBooksVO.bookNumber = "1"
+        mBooksVO.bookDescription =
+            "There are a lot of barriers to changing your mind: ego, overconfidence, inertia — and cost.\n" +
+                    "        Politicians who flip-flop get mocked; family and friends who cross tribal borders are shunned. But shouldn’t we\n" +
+                    "        be encouraging people to change their minds? And how can we get better at it ourselves?There are a lot of\n" +
+                    "        barriers to changing your mind: ego, overconfidence, inertia — and cost.\n" +
+                    "        Politicians who flip-flop get mocked; family and friends who cross tribal borders are shunned. But shouldn’t we\n" +
+                    "        be encouraging people to change their minds? And how can we get better at it ourselves?There are a lot of\n" +
+                    "        barriers to changing your mind: ego, overconfidence, inertia — and cost.\n" +
+                    "        Politicians who flip-flop get mocked; family and friends who cross tribal borders are shunned. But shouldn’t we\n" +
+                    "        be encouraging people to change their minds? And how can we get better at it ourselves?There are a lot of\n" +
+                    "        barriers to changing your mind: ego, overconfidence, inertia — and cost.\n" +
+                    "        Politicians who flip-flop get mocked; family and friends who cross tribal borders are shunned. But shouldn’t we\n" +
+                    "        be encouraging people to change their minds? And how can we get better at it ourselves?"
+
+        mBookList.add(mBooksVO)
+
+        mBooksVO = BooksVO()
+        mBooksVO.bookId = 1000
+        mBooksVO.bookCoverImage = R.drawable.books_old_reading
+        mBooksVO.bookName = "Nothing"
+        mBooksVO.bookAuthorName = "Naing Win Htun"
+        mBooksVO.bookNumber = "1"
+        mBooksVO.bookDescription =
+            "There are a lot of barriers to changing your mind: ego, overconfidence, inertia — and cost.\n" +
+                    "        Politicians who flip-flop get mocked; family and friends who cross tribal borders are shunned. But shouldn’t we\n" +
+                    "        be encouraging people to change their minds? And how can we get better at it ourselves?There are a lot of\n" +
+                    "        barriers to changing your mind: ego, overconfidence, inertia — and cost.\n" +
+                    "        Politicians who flip-flop get mocked; family and friends who cross tribal borders are shunned. But shouldn’t we\n" +
+                    "        be encouraging people to change their minds? And how can we get better at it ourselves?There are a lot of\n" +
+                    "        barriers to changing your mind: ego, overconfidence, inertia — and cost.\n" +
+                    "        Politicians who flip-flop get mocked; family and friends who cross tribal borders are shunned. But shouldn’t we\n" +
+                    "        be encouraging people to change their minds? And how can we get better at it ourselves?There are a lot of\n" +
+                    "        barriers to changing your mind: ego, overconfidence, inertia — and cost.\n" +
+                    "        Politicians who flip-flop get mocked; family and friends who cross tribal borders are shunned. But shouldn’t we\n" +
+                    "        be encouraging people to change their minds? And how can we get better at it ourselves?"
+
+        mBookList.add(mBooksVO)
+
+        mBooksVO = BooksVO()
         mBooksVO.bookId = 1000
         mBooksVO.bookCoverImage = R.drawable.books_board_chalk_inscription_school
         mBooksVO.bookName = "Nothing"

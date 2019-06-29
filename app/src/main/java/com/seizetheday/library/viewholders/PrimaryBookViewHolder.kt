@@ -1,6 +1,5 @@
 package com.seizetheday.library.viewholders
 
-import android.support.design.widget.FloatingActionButton
 import android.view.View
 import android.widget.Button
 import android.widget.ImageView
@@ -45,7 +44,7 @@ class PrimaryBookViewHolder(view: View) : BaseViewHolder(view) {
         }
 
         //book mark button
-        itemView.findViewById<FloatingActionButton>(R.id.fab_primary_book_mark).setOnClickListener {
+        itemView.findViewById<ImageView>(R.id.fab_primary_book_mark).setOnClickListener {
             primaryBookDelegate.onTapPrimaryBookMark()
         }
 

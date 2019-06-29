@@ -10,7 +10,7 @@ class BookMarkAdapter : BaseRecyclerViewAdapter<BaseViewHolder>() {
     override fun onCreateViewHolder(parent: ViewGroup, position: Int): BaseViewHolder {
         return BookMarkViewHolder(
             LayoutInflater.from(parent.context).inflate(
-                R.layout.viewholder_profile_book_mark,
+                R.layout.viewholder_book_mark,
                 parent,
                 false
             )

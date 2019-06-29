@@ -62,7 +62,9 @@
     <string name="text_blank_image_view">Blank Image View</string>
     <string name="text_profile_icon">Profile Icon</string>
     <string name="text_book_mark_cover">Profile Book mark cover.</string>
-    <string name="text_mail">someone@gmail.com</string>
+    <string name="text_mail">someone@something.com</string>
     <string name="text_profile_cover">Profile cover image</string>
     <string name="user_name">User Name</string>
+    <string name="text_user">Mg Someone</string>
+    <string name="text_logout">Logout</string>
 </resources>

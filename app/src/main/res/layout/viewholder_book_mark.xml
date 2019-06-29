@@ -16,7 +16,24 @@
                 android:src="@drawable/books_old_reading"
                 android:layout_width="match_parent"
                 android:scaleType="centerCrop"
+                android:foreground="@drawable/ripple"
+                android:clickable="true"
+                android:focusable="true"
                 android:layout_height="match_parent"
+                android:contentDescription="@string/text_book_mark_cover"/>
+
+        <ImageView
+                android:id="@+id/iv_profile_book_mark"
+                android:layout_width="wrap_content"
+                android:src="@drawable/ic_bookmark_border_black_24dp"
+                android:padding="@dimen/padding_medium_small"
+                android:background="@color/colorPrimaryTransparent"
+                android:clickable="true"
+                android:focusable="true"
+                android:layout_alignParentEnd="true"
+                android:foreground="@drawable/ripple"
+                android:layout_margin="@dimen/margin_tiny"
+                android:layout_height="wrap_content"
                 android:contentDescription="@string/text_book_mark_cover"/>
 
         <TextView

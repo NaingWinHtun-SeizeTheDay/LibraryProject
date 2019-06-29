@@ -2,7 +2,9 @@
 <RelativeLayout
         xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
-        android:padding="@dimen/padding_medium_small"
+        android:paddingTop="@dimen/padding_medium"
+        android:paddingStart="@dimen/padding_medium"
+        android:paddingEnd="@dimen/padding_medium"
         android:clickable="true"
         android:foreground="@drawable/ripple"
         android:layout_height="wrap_content"
@@ -23,6 +25,9 @@
             android:id="@+id/tv_book_category_number"
             android:layout_width="wrap_content"
             android:text="@string/number_sixty_six"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="@drawable/ripple"
             android:layout_alignTop="@id/tv_book_category_name"
             android:textSize="@dimen/text_medium"
             android:layout_marginLeft="@dimen/margin_medium_small"
@@ -31,5 +36,13 @@
             android:padding="@dimen/padding_small"
             android:layout_alignParentEnd="true"
             android:layout_height="wrap_content"/>
+
+    <TextView
+            android:layout_below="@id/tv_book_category_name"
+            android:background="@color/colorPrimaryTransparent"
+            android:layout_width="280sp"
+            android:layout_marginTop="@dimen/margin_medium_small"
+            android:layout_centerHorizontal="true"
+            android:layout_height="@dimen/divider_line_height"/>
 
 </RelativeLayout>

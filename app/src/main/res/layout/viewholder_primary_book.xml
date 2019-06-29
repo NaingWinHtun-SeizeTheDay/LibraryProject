@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.v7.widget.CardView
-        xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
         xmlns:tools="http://schemas.android.com/tools"
         app:cardUseCompatPadding="true"
         android:layout_width="match_parent"
@@ -24,16 +25,17 @@
                 android:contentDescription="@string/text_book_cover"
                 android:focusable="true"/>
 
-        <android.support.design.widget.FloatingActionButton
+        <ImageView
                 android:id="@+id/fab_primary_book_mark"
                 android:layout_alignParentEnd="true"
-                app:useCompatPadding="true"
                 android:clickable="true"
+                android:background="@color/colorPrimaryTransparent"
                 android:backgroundTint="@color/colorPrimaryDarkTransparent"
                 android:src="@drawable/ic_bookmark_border_black_24dp"
-                android:layout_width="?attr/actionBarSize"
-                app:borderWidth="0dp"
-                android:layout_height="?attr/actionBarSize"
+                android:layout_width="wrap_content"
+                android:padding="@dimen/padding_medium_small"
+                android:layout_margin="@dimen/margin_small"
+                android:layout_height="wrap_content"
                 android:focusable="true"/>
 
         <TextView
