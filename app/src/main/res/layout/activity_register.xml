@@ -1,28 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout
         xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
         android:layout_gravity="center"
         android:padding="@dimen/padding_medium"
         android:layout_height="wrap_content">
 
-    <android.support.v7.widget.CardView
-            android:id="@+id/cv_register"
-            android:layout_width="wrap_content"
+    <ImageView
+            android:contentDescription="@string/text_app_logo"
             android:layout_centerHorizontal="true"
-            app:cardUseCompatPadding="true"
-            app:cardElevation="4dp"
-            android:layout_height="wrap_content">
-
-        <ImageView
-                android:contentDescription="@string/text_app_logo"
-                android:id="@+id/iv_register"
-                android:scaleType="centerCrop"
-                android:src="@drawable/library"
-                android:layout_width="@dimen/logo_width_and_size"
-                android:layout_height="@dimen/logo_width_and_size"/>
-    </android.support.v7.widget.CardView>
+            android:id="@+id/iv_register"
+            android:scaleType="centerCrop"
+            android:src="@drawable/logo"
+            android:layout_width="@dimen/logo_width_and_size"
+            android:layout_height="@dimen/logo_width_and_size"/>
 
     <TextView
             android:id="@+id/tv_register"
@@ -32,7 +23,7 @@
             android:layout_width="match_parent"
             android:textSize="@dimen/margin_medium_large"
             android:layout_marginTop="@dimen/margin_medium"
-            android:layout_below="@id/cv_register"
+            android:layout_below="@id/iv_register"
             android:layout_height="wrap_content"/>
 
     <android.support.design.widget.TextInputLayout
@@ -67,6 +58,7 @@
                 android:id="@+id/tit_register_email"
                 android:textColorHint="@color/primary_text"
                 android:layout_width="match_parent"
+                android:inputType="textEmailAddress"
                 android:drawablePadding="@dimen/padding_medium_small"
                 android:textSize="@dimen/text_medium"
                 android:drawableStart="@drawable/ic_mail_outline_primary_color_24dp"
@@ -141,26 +133,33 @@
             android:layout_height="wrap_content"
             android:focusable="true"/>
 
-    <TextView
-            android:text="@string/have_an_account"
-            android:id="@+id/tv_have_an_account"
+    <RelativeLayout
+            android:gravity="center"
             android:layout_below="@id/btn_register"
-            android:layout_centerHorizontal="true"
-            android:textSize="@dimen/text_medium"
-            android:layout_marginTop="@dimen/margin_medium_small"
-            android:textColor="@color/secondary_text"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
 
-    <TextView
-            android:id="@+id/tv_register_login"
-            android:text="@string/text_login"
-            android:textSize="@dimen/text_medium"
-            android:textColor="@color/primary_text"
-            android:layout_marginStart="@dimen/margin_small"
-            android:layout_toEndOf="@id/tv_have_an_account"
-            android:layout_alignBottom="@id/tv_have_an_account"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+        <TextView
+                android:text="@string/have_an_account"
+                android:id="@+id/tv_have_an_account"
+                android:layout_centerHorizontal="true"
+                android:textSize="@dimen/text_medium"
+                android:layout_marginTop="@dimen/margin_medium_small"
+                android:textColor="@color/secondary_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        <TextView
+                android:id="@+id/tv_register_login"
+                android:text="@string/text_login"
+                android:textSize="@dimen/text_medium"
+                android:textColor="@color/primary_text"
+                android:layout_marginStart="@dimen/margin_small"
+                android:layout_toEndOf="@id/tv_have_an_account"
+                android:layout_alignBottom="@id/tv_have_an_account"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
 
 </RelativeLayout>

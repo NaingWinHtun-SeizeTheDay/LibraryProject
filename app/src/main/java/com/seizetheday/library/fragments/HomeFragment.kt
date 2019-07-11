@@ -1,6 +1,5 @@
 package com.seizetheday.library.fragments
 
-
 import android.content.Intent
 import android.os.Bundle
 import android.support.v4.app.Fragment
@@ -13,16 +12,11 @@ import com.seizetheday.library.R
 import com.seizetheday.library.activities.BookDetailActivity
 import com.seizetheday.library.activities.LoginActivity
 import com.seizetheday.library.adapters.BookAdapter
-import com.seizetheday.library.data.vos.BooksVO
 import com.seizetheday.library.delegates.PrimaryBookDelegate
 import com.seizetheday.library.delegates.SecondaryBookDelegate
 import kotlinx.android.synthetic.main.fragment_home.*
 
 class HomeFragment : Fragment(), PrimaryBookDelegate, SecondaryBookDelegate {
-
-    //initialize later
-    lateinit var mBookList: ArrayList<BooksVO>
-
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -34,122 +28,9 @@ class HomeFragment : Fragment(), PrimaryBookDelegate, SecondaryBookDelegate {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        mBookList = ArrayList()
-
         rv_book_list.layoutManager = LinearLayoutManager(context)
-        rv_book_list.adapter = BookAdapter(mBookList, this)
-
-        var mBooksVO: BooksVO?
-
-        mBooksVO = BooksVO()
-        mBooksVO.bookId = 1000
-        mBooksVO.bookCoverImage = R.drawable.books_board_chalk_inscription_school
-        mBooksVO.bookName = "Nothing"
-        mBooksVO.bookAuthorName = "Naing Win Htun"
-        mBooksVO.bookNumber = "1"
-        mBooksVO.bookDescription =
-            "There are a lot of barriers to changing your mind: ego, overconfidence, inertia — and cost.\n" +
-                    "        Politicians who flip-flop get mocked; family and friends who cross tribal borders are shunned. But shouldn’t we\n" +
-                    "        be encouraging people to change their minds? And how can we get better at it ourselves?There are a lot of\n" +
-                    "        barriers to changing your mind: ego, overconfidence, inertia — and cost.\n" +
-                    "        Politicians who flip-flop get mocked; family and friends who cross tribal borders are shunned. But shouldn’t we\n" +
-                    "        be encouraging people to change their minds? And how can we get better at it ourselves?There are a lot of\n" +
-                    "        barriers to changing your mind: ego, overconfidence, inertia — and cost.\n" +
-                    "        Politicians who flip-flop get mocked; family and friends who cross tribal borders are shunned. But shouldn’t we\n" +
-                    "        be encouraging people to change their minds? And how can we get better at it ourselves?There are a lot of\n" +
-                    "        barriers to changing your mind: ego, overconfidence, inertia — and cost.\n" +
-                    "        Politicians who flip-flop get mocked; family and friends who cross tribal borders are shunned. But shouldn’t we\n" +
-                    "        be encouraging people to change their minds? And how can we get better at it ourselves?"
-
-        mBookList.add(mBooksVO)
-
-        mBooksVO = BooksVO()
-        mBooksVO.bookId = 1000
-        mBooksVO.bookCoverImage = R.drawable.books_cover_background
-        mBooksVO.bookName = "Nothing"
-        mBooksVO.bookAuthorName = "Naing Win Htun"
-        mBooksVO.bookNumber = "1"
-        mBooksVO.bookDescription =
-            "There are a lot of barriers to changing your mind: ego, overconfidence, inertia — and cost.\n" +
-                    "        Politicians who flip-flop get mocked; family and friends who cross tribal borders are shunned. But shouldn’t we\n" +
-                    "        be encouraging people to change their minds? And how can we get better at it ourselves?There are a lot of\n" +
-                    "        barriers to changing your mind: ego, overconfidence, inertia — and cost.\n" +
-                    "        Politicians who flip-flop get mocked; family and friends who cross tribal borders are shunned. But shouldn’t we\n" +
-                    "        be encouraging people to change their minds? And how can we get better at it ourselves?There are a lot of\n" +
-                    "        barriers to changing your mind: ego, overconfidence, inertia — and cost.\n" +
-                    "        Politicians who flip-flop get mocked; family and friends who cross tribal borders are shunned. But shouldn’t we\n" +
-                    "        be encouraging people to change their minds? And how can we get better at it ourselves?There are a lot of\n" +
-                    "        barriers to changing your mind: ego, overconfidence, inertia — and cost.\n" +
-                    "        Politicians who flip-flop get mocked; family and friends who cross tribal borders are shunned. But shouldn’t we\n" +
-                    "        be encouraging people to change their minds? And how can we get better at it ourselves?"
-
-        mBookList.add(mBooksVO)
-
-        mBooksVO = BooksVO()
-        mBooksVO.bookId = 1000
-        mBooksVO.bookCoverImage = R.drawable.books_glasses_vase
-        mBooksVO.bookName = "Nothing"
-        mBooksVO.bookAuthorName = "Naing Win Htun"
-        mBooksVO.bookNumber = "1"
-        mBooksVO.bookDescription =
-            "There are a lot of barriers to changing your mind: ego, overconfidence, inertia — and cost.\n" +
-                    "        Politicians who flip-flop get mocked; family and friends who cross tribal borders are shunned. But shouldn’t we\n" +
-                    "        be encouraging people to change their minds? And how can we get better at it ourselves?There are a lot of\n" +
-                    "        barriers to changing your mind: ego, overconfidence, inertia — and cost.\n" +
-                    "        Politicians who flip-flop get mocked; family and friends who cross tribal borders are shunned. But shouldn’t we\n" +
-                    "        be encouraging people to change their minds? And how can we get better at it ourselves?There are a lot of\n" +
-                    "        barriers to changing your mind: ego, overconfidence, inertia — and cost.\n" +
-                    "        Politicians who flip-flop get mocked; family and friends who cross tribal borders are shunned. But shouldn’t we\n" +
-                    "        be encouraging people to change their minds? And how can we get better at it ourselves?There are a lot of\n" +
-                    "        barriers to changing your mind: ego, overconfidence, inertia — and cost.\n" +
-                    "        Politicians who flip-flop get mocked; family and friends who cross tribal borders are shunned. But shouldn’t we\n" +
-                    "        be encouraging people to change their minds? And how can we get better at it ourselves?"
-
-        mBookList.add(mBooksVO)
-
-        mBooksVO = BooksVO()
-        mBooksVO.bookId = 1000
-        mBooksVO.bookCoverImage = R.drawable.books_old_reading
-        mBooksVO.bookName = "Nothing"
-        mBooksVO.bookAuthorName = "Naing Win Htun"
-        mBooksVO.bookNumber = "1"
-        mBooksVO.bookDescription =
-            "There are a lot of barriers to changing your mind: ego, overconfidence, inertia — and cost.\n" +
-                    "        Politicians who flip-flop get mocked; family and friends who cross tribal borders are shunned. But shouldn’t we\n" +
-                    "        be encouraging people to change their minds? And how can we get better at it ourselves?There are a lot of\n" +
-                    "        barriers to changing your mind: ego, overconfidence, inertia — and cost.\n" +
-                    "        Politicians who flip-flop get mocked; family and friends who cross tribal borders are shunned. But shouldn’t we\n" +
-                    "        be encouraging people to change their minds? And how can we get better at it ourselves?There are a lot of\n" +
-                    "        barriers to changing your mind: ego, overconfidence, inertia — and cost.\n" +
-                    "        Politicians who flip-flop get mocked; family and friends who cross tribal borders are shunned. But shouldn’t we\n" +
-                    "        be encouraging people to change their minds? And how can we get better at it ourselves?There are a lot of\n" +
-                    "        barriers to changing your mind: ego, overconfidence, inertia — and cost.\n" +
-                    "        Politicians who flip-flop get mocked; family and friends who cross tribal borders are shunned. But shouldn’t we\n" +
-                    "        be encouraging people to change their minds? And how can we get better at it ourselves?"
-
-        mBookList.add(mBooksVO)
-
-        mBooksVO = BooksVO()
-        mBooksVO.bookId = 1000
-        mBooksVO.bookCoverImage = R.drawable.books_board_chalk_inscription_school
-        mBooksVO.bookName = "Nothing"
-        mBooksVO.bookAuthorName = "Naing Win Htun"
-        mBooksVO.bookNumber = "1"
-        mBooksVO.bookDescription =
-            "There are a lot of barriers to changing your mind: ego, overconfidence, inertia — and cost.\n" +
-                    "        Politicians who flip-flop get mocked; family and friends who cross tribal borders are shunned. But shouldn’t we\n" +
-                    "        be encouraging people to change their minds? And how can we get better at it ourselves?There are a lot of\n" +
-                    "        barriers to changing your mind: ego, overconfidence, inertia — and cost.\n" +
-                    "        Politicians who flip-flop get mocked; family and friends who cross tribal borders are shunned. But shouldn’t we\n" +
-                    "        be encouraging people to change their minds? And how can we get better at it ourselves?There are a lot of\n" +
-                    "        barriers to changing your mind: ego, overconfidence, inertia — and cost.\n" +
-                    "        Politicians who flip-flop get mocked; family and friends who cross tribal borders are shunned. But shouldn’t we\n" +
-                    "        be encouraging people to change their minds? And how can we get better at it ourselves?There are a lot of\n" +
-                    "        barriers to changing your mind: ego, overconfidence, inertia — and cost.\n" +
-                    "        Politicians who flip-flop get mocked; family and friends who cross tribal borders are shunned. But shouldn’t we\n" +
-                    "        be encouraging people to change their minds? And how can we get better at it ourselves?"
-
-        mBookList.add(mBooksVO)
+        val adapter = BookAdapter(this, this)
+        rv_book_list.adapter = adapter
 
     }
 

@@ -59,6 +59,7 @@
 
         <android.support.design.widget.TabLayout
                 android:id="@+id/tl_main"
+                app:tabGravity="center"
                 app:tabSelectedTextColor="@color/primary_black"
                 app:tabIndicatorColor="@color/primary_black"
                 android:layout_width="match_parent"

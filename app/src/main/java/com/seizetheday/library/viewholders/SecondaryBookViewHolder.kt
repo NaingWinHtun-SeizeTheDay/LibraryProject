@@ -1,5 +1,6 @@
 package com.seizetheday.library.viewholders
 
+import android.support.v7.widget.RecyclerView
 import android.view.View
 import android.widget.Button
 import android.widget.ImageView
@@ -7,6 +8,8 @@ import com.seizetheday.library.R
 import com.seizetheday.library.delegates.SecondaryBookDelegate
 
 class SecondaryBookViewHolder(view: View) : BaseViewHolder(view) {
+
+    val rvSecondaryBook = view.findViewById<RecyclerView>(R.id.rv_secondary_book)
 
     constructor(itemView: View, mSecondaryBookDelegate: SecondaryBookDelegate) : this(itemView) {
 

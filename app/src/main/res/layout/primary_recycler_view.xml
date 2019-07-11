@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <TextView
+            android:id="@+id/tv_popular_title"
+            android:text="@string/text_popular_books"
+            android:layout_width="match_parent"
+            android:textSize="@dimen/text_medium"
+            android:textStyle="bold"
+            android:layout_marginTop="@dimen/margin_medium_small"
+            android:layout_marginBottom="@dimen/margin_medium_small"
+            android:layout_marginStart="@dimen/margin_medium"
+            android:layout_height="wrap_content"/>
+
+    <android.support.v7.widget.RecyclerView
+            android:layout_below="@id/tv_popular_title"
+            android:id="@+id/rv_primary_book"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+</RelativeLayout>

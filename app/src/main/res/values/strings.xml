@@ -67,4 +67,8 @@
     <string name="user_name">User Name</string>
     <string name="text_user">Mg Someone</string>
     <string name="text_logout">Logout</string>
+    <string name="text_empty_image">Empty View Image</string>
+    <string name="text_error">Error</string>
+    <string name="text_popular_books">Popular Books</string>
+    <string name="text_books">Books</string>
 </resources>
