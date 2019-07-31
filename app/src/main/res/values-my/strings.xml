@@ -1,3 +1,53 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="app_name">စာကြည့်တိုက်</string>
+    <string name="text_download">ဒေါင်းလုဒ်</string>
+    <string name="text_share">ရှယ်</string>
+    <string name="text_read">စာဖတ်မည်</string>
+    <string name="text_edition">ထုတ်ဝေမှု</string>
+    <string name="books_name">Books Glasses Vase</string>
+    <string name="book_author_name">Wallpaper Craft</string>
+    <string name="text_isbn">ISBN:9781581573268</string>
+    <string name="edition_text">First Edition</string>
+    <string name="text_local_availability">Local Availability</string>
+    <string name="text_available">0 (of 1)</string>
+    <string name="text_rating">Rating</string>
+    <string name="rating_number">4.5</string>
+    <string name="text_app_logo">အမှတ်တံဆိပ်</string>
+    <string name="text_technology">Technology</string>
+    <string name="number_sixty_six">66</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="text_search">ရှာဖွေရန်...</string>
+    <string name="text_bookmark">စာညှပ်ရန်</string>
+    <string name="text_bookmark_title">စာညှပ်များ</string>
+    <string name="text_category_title">အမျိုးအစားများ</string>
+    <string name="text_book_title">စာအုပ်များ</string>
+    <string name="text_login">လော့ဂ်အင်</string>
+    <string name="text_password">စကားဝှက်</string>
+    <string name="have_an_account">အကောင့်ရှိပြီးသားလား?</string>
+    <string name="text_show_password">လှို့ဝှက်စကားလုံးကိုဖော်ပြပါ</string>
+    <string name="text_user_name">သုံးစွဲသူအမည်</string>
+    <string name="text_forget_password">စကားဝှက်ကိုမေ့သွားတယ်!!</string>
+    <string name="text_register">စာရင်းသွင်း</string>
+    <string name="create_account">အကောင့်မရှိဘူးလား?</string>
+    <string name="text_email">အီးမေးလ်</string>
+    <string name="text_confirm_password">စကားဝှက်ကိုအတည်ပြုပါ</string>
+    <string name="text_blog_post_image">Blog post image</string>
+    <string name="text_book_cover">Book Cover</string>
+    <string name="text_blank_image_view">Blank Image View</string>
+    <string name="text_profile_icon">Profile Icon</string>
+    <string name="text_book_mark_cover">Profile Book mark cover.</string>
+    <string name="text_mail">အီးမေးလ်</string>
+    <string name="text_profile_cover">Profile cover image</string>
+    <string name="user_name">သုံးစွဲသူအမည်</string>
+    <string name="text_user">အမည်</string>
+    <string name="text_logout">ပြန်ထွက်ရန်</string>
+    <string name="text_empty_image">Empty View Image</string>
+    <string name="text_error">Error</string>
+    <string name="text_popular_books">လူကြိုက်များသောစာအုပ်များ</string>
+    <string name="text_books">တင်ထားသောစာအုပ်များ</string>
+    <string name="notice_book_mark">ဒီနေရာမှာသင့်ရဲ့ စာညှပ် ထားသောစာအုပ်များကိုရှာပါ</string>
+    <string name="notice_book_mark_second">စာအုပ်ဖတ်နေသည့်အခါ စာညှပ် အိုင်ကွန် ကိုနှိပ်၍
+        သိမ်းဆည်းထားနိုင်ပါသည်။ နောက်မှဖတ်ရှုဖို့ ဒီနေရာကိုရောက်လာနိုင်ပါတယ်။
+    </string>
 </resources>

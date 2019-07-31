@@ -1,16 +1,64 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout
+<RelativeLayout
         xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:context=".fragments.BookMarkFragment">
 
-    <android.support.v7.widget.RecyclerView
-            android:id="@+id/rv_book_mark"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
+    <RelativeLayout
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
 
-    </android.support.v7.widget.RecyclerView>
+        <ImageView
+                android:id="@+id/iv_empty_book_mark_image"
+                android:scaleType="centerCrop"
+                android:src="@drawable/empty_book_mark"
+                android:layout_centerHorizontal="true"
+                android:layout_width="@dimen/empty_image_size"
+                android:layout_height="@dimen/empty_image_size"
+                android:contentDescription="@string/text_bookmark"/>
 
-</FrameLayout>
+        <TextView
+                android:id="@+id/tv_empty_book_mark_text"
+                android:layout_marginTop="@dimen/margin_medium"
+                android:text="@string/notice_book_mark"
+                android:layout_below="@id/iv_empty_book_mark_image"
+                android:textSize="@dimen/text_medium"
+                android:textStyle="bold"
+                android:paddingEnd="@dimen/padding_medium"
+                android:paddingStart="@dimen/padding_medium"
+                android:textColor="@color/primary_black"
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        <TextView
+                android:layout_below="@id/tv_empty_book_mark_text"
+                android:layout_width="match_parent"
+                android:layout_centerHorizontal="true"
+                android:textSize="@dimen/text_medium"
+                android:textAlignment="center"
+                android:textColor="@color/primary_text"
+                android:paddingStart="@dimen/padding_large"
+                android:paddingEnd="@dimen/padding_large"
+                android:layout_marginTop="@dimen/margin_medium"
+                android:text="@string/notice_book_mark_second"
+                android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+
+    <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/srlBookMark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_book_mark"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+</RelativeLayout>

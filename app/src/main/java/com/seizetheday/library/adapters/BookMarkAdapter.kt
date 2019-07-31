@@ -22,7 +22,7 @@ class BookMarkAdapter(bookMarkDelegate: BookMarkDelegate) : BaseRecyclerViewAdap
     }
 
     override fun getItemCount(): Int {
-        return 50
+        return 0
     }
 
     override fun onBindViewHolder(p0: BaseViewHolder, p1: Int) {

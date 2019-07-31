@@ -1,9 +1,11 @@
 package com.seizetheday.library.delegates
 
+import com.seizetheday.library.data.vos.PrimaryBookVO
+
 interface PrimaryBookDelegate {
-    fun onTapPrimaryBookImage()
-    fun onTapPrimaryBookMark()
-    fun onTapPrimaryBookDownload()
-    fun onTapPrimaryBookShare()
-    fun onTapPrimaryBook()
+    fun onTapPrimaryBookImage(bookVO: PrimaryBookVO)
+    fun onTapPrimaryBookMark(bookVO: PrimaryBookVO)
+    fun onTapPrimaryBookDownload(bookVO: PrimaryBookVO)
+    fun onTapPrimaryBookShare(bookVO: PrimaryBookVO)
+    fun onTapPrimaryBook(bookVO: PrimaryBookVO)
 }

@@ -32,6 +32,11 @@ class BookMarkFragment : Fragment(), BookMarkDelegate {
         //set up adapter to recycler view
         rv_book_mark.layoutManager = GridLayoutManager(context, 3)
         rv_book_mark.adapter = BookMarkAdapter(this)
+
+        srlBookMark.isRefreshing = false
+
+        srlBookMark.setOnRefreshListener {
+        }
     }
 
     override fun onTapBookMark() {

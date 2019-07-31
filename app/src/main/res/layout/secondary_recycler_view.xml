@@ -8,12 +8,13 @@
             android:id="@+id/tv_book_title"
             android:text="@string/text_books"
             android:textStyle="bold"
-            android:textColor="@color/secondary_text"
+            android:visibility="gone"
+            android:textColor="@color/primary_black"
             android:textSize="@dimen/text_medium"
             android:layout_width="match_parent"
             android:layout_marginStart="@dimen/margin_medium"
             android:layout_marginBottom="@dimen/margin_medium_small"
-            android:layout_marginTop="@dimen/margin_medium_small"
+            android:layout_marginTop="@dimen/margin_medium"
             android:layout_height="wrap_content"/>
 
     <android.support.v7.widget.RecyclerView

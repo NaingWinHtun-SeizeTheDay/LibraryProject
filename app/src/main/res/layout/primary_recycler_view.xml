@@ -9,8 +9,10 @@
             android:text="@string/text_popular_books"
             android:layout_width="match_parent"
             android:textSize="@dimen/text_medium"
+            android:visibility="gone"
             android:textStyle="bold"
-            android:layout_marginTop="@dimen/margin_medium_small"
+            android:textColor="@color/primary_black"
+            android:layout_marginTop="@dimen/margin_medium"
             android:layout_marginBottom="@dimen/margin_medium_small"
             android:layout_marginStart="@dimen/margin_medium"
             android:layout_height="wrap_content"/>

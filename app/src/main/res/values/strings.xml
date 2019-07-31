@@ -1,37 +1,19 @@
 <resources>
     <string name="app_name">Library</string>
-    <string name="book_number">Number 1000</string>
-    <string name="demo_text">
+    <string name="book_number" translatable="false">Number 1000</string>
+    <string name="demo_text" translatable="false">
         There are a lot of barriers to changing your mind: ego, overconfidence, inertia — and cost.
         Politicians who flip-flop get mocked; family and friends who cross tribal borders are shunned. But shouldn’t we
         be encouraging people to change their minds? And how can we get better at it ourselves?There are a lot of
         barriers to changing your mind: ego, overconfidence, inertia — and cost.
         Politicians who flip-flop get mocked; family and friends who cross tribal borders are shunned. But shouldn’t we
-        be encouraging people to change their minds? And how can we get better at it ourselves?There are a lot of
-        barriers to changing your mind: ego, overconfidence, inertia — and cost.
-        Politicians who flip-flop get mocked; family and friends who cross tribal borders are shunned. But shouldn’t we
-        be encouraging people to change their minds? And how can we get better at it ourselves?There are a lot of
-        barriers to changing your mind: ego, overconfidence, inertia — and cost.
-        Politicians who flip-flop get mocked; family and friends who cross tribal borders are shunned. But shouldn’t we
-        be encouraging people to change their minds? And how can we get better at it ourselves?There are a lot of
-        barriers to changing your mind: ego, overconfidence, inertia — and cost.
-        Politicians who flip-flop get mocked; family and friends who cross tribal borders are shunned. But shouldn’t we
-        be encouraging people to change their minds? And how can we get better at it ourselves?There are a lot of
-        barriers to changing your mind: ego, overconfidence, inertia — and cost.
-        Politicians who flip-flop get mocked; family and friends who cross tribal borders are shunned. But shouldn’t we
-        be encouraging people to change their minds? And how can we get better at it ourselves?There are a lot of
-        barriers to changing your mind: ego, overconfidence, inertia — and cost.
-        Politicians who flip-flop get mocked; family and friends who cross tribal borders are shunned. But shouldn’t we
-        be encouraging people to change their minds? And how can we get better at it ourselves?There are a lot of
-        barriers to changing your mind: ego, overconfidence, inertia — and cost.
-        Politicians who flip-flop get mocked; family and friends who cross tribal borders are shunned. But shouldn’t we
-        be encouraging people to change their minds? And how can we get better at it ourselves?
+        be encouraging people to change their minds?
     </string>
     <string name="text_download">Download</string>
     <string name="text_share">Share</string>
     <string name="books_name">Books Glasses Vase</string>
     <string name="book_author_name">Wallpaper Craft</string>
-    <string name="text_read">Read</string>
+    <string name="text_read" translatable="false">Read</string>
     <string name="text_isbn">ISBN:9781581573268</string>
     <string name="text_edition">Edition</string>
     <string name="edition_text">First Edition</string>
@@ -52,9 +34,9 @@
     <string name="text_show_password">Show Password</string>
     <string name="text_app_logo">App Logo</string>
     <string name="text_user_name">User name</string>
-    <string name="text_forget_password">Forget password?</string>
+    <string name="text_forget_password">Forget password!!</string>
     <string name="text_register">Register</string>
-    <string name="create_account">Don\'t have any account.</string>
+    <string name="create_account">New to BookClub.</string>
     <string name="text_email">E-mail</string>
     <string name="text_confirm_password">Confirm password</string>
     <string name="text_blog_post_image">Blog post image</string>
@@ -69,6 +51,17 @@
     <string name="text_logout">Logout</string>
     <string name="text_empty_image">Empty View Image</string>
     <string name="text_error">Error</string>
+    <string name="text_bookmark_title">BookMarks</string>
+    <string name="text_category_title">Categories</string>
+    <string name="text_book_title">Books</string>
     <string name="text_popular_books">Popular Books</string>
-    <string name="text_books">Books</string>
+    <string name="text_books">Uploaded Books</string>
+    <string name="notice_book_mark">Find your save book mark here</string>
+    <string name="notice_book_mark_second">When reading a book, click on the bookmark icon to save it.You can able to
+        come here to read it later.
+    </string>
+    <string name="text_empty" translatable="false">Empty</string>
+    <string name="text_empty_category">Empty Category</string>
+    <string name="text_empty_books">Empty Books</string>
+    <string name="text_force_refresh">Pull down for reload</string>
 </resources>

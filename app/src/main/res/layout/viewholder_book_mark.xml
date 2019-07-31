@@ -4,7 +4,7 @@
         xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_width="fill_parent"
         app:cardUseCompatPadding="true"
-        android:layout_margin="@dimen/margin_tiny"
+        android:layout_margin="@dimen/margin_medium_small"
         android:layout_height="@dimen/profile_book_mark_height">
 
     <RelativeLayout
@@ -32,7 +32,6 @@
                 android:focusable="true"
                 android:layout_alignParentEnd="true"
                 android:foreground="@drawable/ripple"
-                android:layout_margin="@dimen/margin_tiny"
                 android:layout_height="wrap_content"
                 android:contentDescription="@string/text_book_mark_cover"/>
 
@@ -46,7 +45,7 @@
                 android:singleLine="true"
                 android:layout_alignBottom="@+id/iv_book_mark_cover"
                 style="@style/BlackShadow"
-                android:textSize="@dimen/text_large"
+                android:textSize="@dimen/text_medium"
                 android:clickable="true"
                 android:focusable="true"
                 android:foreground="@drawable/ripple"

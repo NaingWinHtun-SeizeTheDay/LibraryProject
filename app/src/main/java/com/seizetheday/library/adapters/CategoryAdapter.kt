@@ -1,15 +1,18 @@
 package com.seizetheday.library.adapters
 
+import android.support.v7.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import com.seizetheday.library.R
+import com.seizetheday.library.data.vos.CategoryVO
 import com.seizetheday.library.delegates.CategoryDelegate
-import com.seizetheday.library.viewholders.BaseViewHolder
 import com.seizetheday.library.viewholders.CategoryViewHolder
 
-class CategoryAdapter(categoryDelegate: CategoryDelegate) : BaseRecyclerViewAdapter<BaseViewHolder>() {
+class CategoryAdapter(categoryDelegate: CategoryDelegate) : RecyclerView.Adapter<CategoryViewHolder>() {
 
     private var mCategoryViewHolder = categoryDelegate
+
+    private var mCategory: List<CategoryVO> = ArrayList<CategoryVO>()
 
     override fun onCreateViewHolder(parent: ViewGroup, position: Int): CategoryViewHolder {
         return CategoryViewHolder(
@@ -19,11 +22,19 @@ class CategoryAdapter(categoryDelegate: CategoryDelegate) : BaseRecyclerViewAdap
         )
     }
 
-    override fun onBindViewHolder(viewholder: BaseViewHolder, position: Int) {
+    override fun onBindViewHolder(viewholder: CategoryViewHolder, position: Int) {
+        viewholder.onBindData(mCategory[position])
     }
 
     override fun getItemCount(): Int {
-        return 50
+        return mCategory.size
+    }
+
+    fun setCategoryData(category: List<CategoryVO>?) {
+        if (category != null) {
+            mCategory = category
+        }
+        notifyDataSetChanged()
     }
 
 }

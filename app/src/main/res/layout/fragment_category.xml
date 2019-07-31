@@ -1,15 +1,83 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-             xmlns:tools="http://schemas.android.com/tools"
-             android:layout_width="match_parent"
-             android:layout_height="match_parent"
-             tools:context=".fragments.CategoryFragment">
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".fragments.CategoryFragment">
 
-    <android.support.v7.widget.RecyclerView
-            android:id="@+id/rv_book_category"
+    <RelativeLayout
+            android:visibility="gone"
+            android:id="@+id/category_empty_view"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        <ImageView
+                android:id="@+id/iv_category_empty_view"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/empty_category"
+                android:layout_width="@dimen/empty_image_size"
+                android:layout_height="@dimen/empty_image_size"
+                android:contentDescription="@string/text_empty"/>
+
+        <TextView
+                android:id="@+id/tv_empty_category_text"
+                android:layout_marginTop="@dimen/margin_medium"
+                android:text="@string/text_empty_category"
+                android:layout_below="@id/iv_category_empty_view"
+                android:textSize="@dimen/text_medium"
+                android:textStyle="bold"
+                android:paddingEnd="@dimen/padding_medium"
+                android:paddingStart="@dimen/padding_medium"
+                android:textColor="@color/primary_black"
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        <TextView
+                android:id="@+id/tv_category_error_message"
+                android:layout_width="wrap_content"
+                android:text="@string/text_empty"
+                android:textAlignment="center"
+                android:textSize="@dimen/text_medium"
+                android:paddingStart="@dimen/padding_large"
+                android:paddingEnd="@dimen/padding_large"
+                android:textColor="@color/secondary_text"
+                android:layout_marginTop="@dimen/margin_medium"
+                android:layout_centerInParent="true"
+                android:layout_below="@id/tv_empty_category_text"
+                android:layout_height="wrap_content"/>
+
+        <TextView
+                android:id="@+id/tv_force_refresh"
+                android:layout_below="@id/tv_category_error_message"
+                android:paddingTop="@dimen/padding_medium_small"
+                android:paddingStart="@dimen/padding_medium"
+                android:paddingEnd="@dimen/padding_medium"
+                android:paddingBottom="@dimen/padding_medium_small"
+                android:textAllCaps="false"
+                android:text="@string/text_force_refresh"
+                android:layout_width="wrap_content"
+                android:layout_marginTop="@dimen/margin_medium_large"
+                android:textSize="@dimen/text_medium"
+                android:textStyle="bold"
+                android:textColor="@color/color_error"
+                android:layout_centerHorizontal="true"
+                android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+
+    <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/srl_Category"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
-    </android.support.v7.widget.RecyclerView>
+        <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_book_category"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
 
-</FrameLayout>
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+</RelativeLayout>

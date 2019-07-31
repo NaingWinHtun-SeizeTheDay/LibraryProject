@@ -37,4 +37,13 @@ dependencies {
     //glide
     implementation 'com.github.bumptech.glide:glide:4.9.0'
     annotationProcessor 'com.github.bumptech.glide:compiler:4.9.0'
+
+    //g son
+    implementation 'com.google.code.gson:gson:2.8.5'
+
+    //g son converter factory
+    implementation 'com.squareup.retrofit2:converter-gson:2.6.0'
+
+    //green robot event bus
+    implementation 'org.greenrobot:eventbus:3.1.1'
 }
