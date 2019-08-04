@@ -16,6 +16,7 @@
     <color name="default_color">#F9F9F9</color>
     <color name="colorBookDetail">#4CAF50</color>
 
+    <color name="defaultColorTransparent">#C1F9F9F9</color>
     <color name="colorPrimaryTransparent">#C19E9E9E</color>
     <color name="colorPrimaryDarkTransparent">#C1616161</color>
     <color name="colorSecondaryAccent">#9E9E9E</color>

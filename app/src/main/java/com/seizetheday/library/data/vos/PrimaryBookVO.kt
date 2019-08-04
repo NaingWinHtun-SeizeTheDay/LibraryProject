@@ -3,18 +3,20 @@ package com.seizetheday.library.data.vos
 import com.google.gson.annotations.SerializedName
 
 data class PrimaryBookVO(
-    @SerializedName("b_id")
-    val bookId: String,
-    @SerializedName("b_name")
+    @SerializedName("id")
+    val id: Int,
+    @SerializedName("book_name")
     val bookName: String,
-    @SerializedName("b_author")
+    @SerializedName("author_name")
     val authorName: String,
-    @SerializedName("b_image")
-    val bookCover: String,
-    @SerializedName("b_category")
-    val bookCategory: String,
-    @SerializedName("b_release_year")
-    val bookReleaseYear: String,
-    @SerializedName("b_pdf")
-    val bookPdf: String
+    @SerializedName("book_description")
+    val bookDescription: String,
+    @SerializedName("book_edition")
+    val bookEdition: String,
+    @SerializedName("book_isbn")
+    val bookIsbn: String,
+    @SerializedName("book_download_rate")
+    val bookDownloadRate: String,
+    @SerializedName("book_cover")
+    val bookCover: String
 )

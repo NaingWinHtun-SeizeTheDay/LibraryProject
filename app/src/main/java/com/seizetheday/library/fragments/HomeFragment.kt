@@ -97,7 +97,7 @@ class HomeFragment : Fragment(), PrimaryBookDelegate, SecondaryBookDelegate {
     override fun onTapPrimaryBook(book: PrimaryBookVO) {
 
         val intent = Intent(context, BookDetailActivity::class.java)
-        intent.putExtra("bookId", book.bookId.toInt())
+        intent.putExtra("bookId", book.id.toInt())
         startActivity(intent)
 
     }

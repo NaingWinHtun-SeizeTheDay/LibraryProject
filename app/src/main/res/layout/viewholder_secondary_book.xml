@@ -91,7 +91,7 @@
                 android:layout_weight="1"
                 android:layout_marginTop="@dimen/margin_medium_small"
                 android:clickable="true"
-                android:background="@color/colorPrimaryTransparent"
+                android:background="@color/defaultColorTransparent"
                 android:layout_toEndOf="@id/iv_secondary_book_cover"
                 android:focusable="true"
                 android:layout_alignBottom="@id/iv_secondary_book_cover"

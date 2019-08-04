@@ -53,7 +53,7 @@ class RetrofitDataAgent {
             .client(okHttpClient)
             .build()
 
-        val retrofitBook = Retrofit.Builder()
+        val retrofitSecondaryBook = Retrofit.Builder()
             .baseUrl(SECONDARY_BOOK_API)
             .addConverterFactory(GsonConverterFactory.create())
             .client(okHttpClient)
@@ -66,7 +66,7 @@ class RetrofitDataAgent {
             .build()
 
         mCategoryAPI = retrofit.create(CategoryAPI::class.java)
-        mBookAPI = retrofitBook.create(BookAPI::class.java)
+        mBookAPI = retrofitSecondaryBook.create(BookAPI::class.java)
         mPrimaryBookAPI = retrofitPrimaryBook.create(PrimaryBookAPI::class.java)
 
     }
@@ -89,7 +89,7 @@ class RetrofitDataAgent {
         })
     }
 
-    fun loadBook() {
+    fun loadSecondaryBook() {
         val response = mBookAPI.loadBook()
 
         response.enqueue(object : Callback<BookResponse> {
@@ -108,7 +108,7 @@ class RetrofitDataAgent {
     }
 
     fun loadPrimaryBook() {
-        val response = mPrimaryBookAPI.loadPrimaryBook("popular_book")
+        val response = mPrimaryBookAPI.loadPrimaryBook()
 
         response.enqueue(object : Callback<PrimaryBookResponse> {
             override fun onFailure(call: Call<PrimaryBookResponse>, t: Throwable) {
@@ -119,7 +119,7 @@ class RetrofitDataAgent {
                 val bookResponse: PrimaryBookResponse? = response.body()
                 if (bookResponse != null) {
                     EventBus.getDefault()
-                        .post(PrimaryBookDataEvent.SuccessGetPrimaryBookEvent(bookResponse.getPopular()))
+                        .post(PrimaryBookDataEvent.SuccessGetPrimaryBookEvent(bookResponse.getBook()))
                 }
             }
         })

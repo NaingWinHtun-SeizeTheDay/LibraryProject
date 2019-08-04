@@ -26,7 +26,7 @@ class BookModel {
 
     //load book from DataAgent
     fun loadBooks() {
-        RetrofitDataAgent.getObjInstance().loadBook()
+        RetrofitDataAgent.getObjInstance().loadSecondaryBook()
     }
 
     init {
