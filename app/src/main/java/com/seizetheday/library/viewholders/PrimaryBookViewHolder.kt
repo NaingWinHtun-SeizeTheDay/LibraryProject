@@ -1,5 +1,6 @@
 package com.seizetheday.library.viewholders
 
+import android.support.v4.text.HtmlCompat
 import android.support.v7.widget.RecyclerView
 import android.view.View
 import android.widget.Button
@@ -28,8 +29,8 @@ class PrimaryBookViewHolder(view: View) : BaseViewHolder(view) {
         }
 
         //share button
-        itemView.findViewById<Button>(R.id.btn_primary_book_share).setOnClickListener {
-            primaryBookDelegate.onTapPrimaryBookShare(mBook)
+        itemView.findViewById<Button>(R.id.btn_primary_book_read).setOnClickListener {
+            primaryBookDelegate.onTapPrimaryBookRead(mBook)
         }
 
         //book mark button
@@ -49,7 +50,7 @@ class PrimaryBookViewHolder(view: View) : BaseViewHolder(view) {
         itemView.findViewById<TextView>(R.id.tv_primary_book_name).text = mBook.bookName
         itemView.findViewById<TextView>(R.id.tv_primary_book_author_name).text = mBook.authorName
         itemView.findViewById<TextView>(R.id.tv_primary_book_number).text = mBook.id.toString()
-        itemView.findViewById<TextView>(R.id.tv_primary_book_description).text = mBook.bookDescription
+        itemView.findViewById<TextView>(R.id.tv_primary_book_description).text = HtmlCompat.fromHtml(mBook.bookDescription,0)
         Glide.with(itemView).load(mBook.bookCover).into(itemView.findViewById(R.id.iv_primary_book_cover))
         //for text visibility
         view.findViewById<TextView>(R.id.tv_popular_title).visibility = View.VISIBLE

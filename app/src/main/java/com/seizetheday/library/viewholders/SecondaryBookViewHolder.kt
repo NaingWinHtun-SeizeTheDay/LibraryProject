@@ -1,5 +1,6 @@
 package com.seizetheday.library.viewholders
 
+import android.support.v4.text.HtmlCompat
 import android.support.v7.widget.RecyclerView
 import android.view.View
 import android.widget.Button
@@ -38,7 +39,8 @@ class SecondaryBookViewHolder(view: View) : BaseViewHolder(view) {
         mBook = book
         itemView.findViewById<TextView>(R.id.tv_secondary_book_name).text = mBook.bookName
         itemView.findViewById<TextView>(R.id.tv_secondary_book_author_name).text = mBook.authorName
-        itemView.findViewById<TextView>(R.id.tv_secondary_book_description).text = mBook.bookDescription
+        itemView.findViewById<TextView>(R.id.tv_secondary_book_description).text =
+            HtmlCompat.fromHtml(mBook.bookDescription, 0)
         Glide.with(itemView).load(mBook.bookCover).into(itemView.findViewById(R.id.iv_secondary_book_cover))
         view.findViewById<TextView>(R.id.tv_book_title).visibility = View.VISIBLE
     }

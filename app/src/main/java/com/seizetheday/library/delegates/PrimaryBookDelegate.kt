@@ -6,6 +6,6 @@ interface PrimaryBookDelegate {
     fun onTapPrimaryBookImage(bookVO: PrimaryBookVO)
     fun onTapPrimaryBookMark(bookVO: PrimaryBookVO)
     fun onTapPrimaryBookDownload(bookVO: PrimaryBookVO)
-    fun onTapPrimaryBookShare(bookVO: PrimaryBookVO)
+    fun onTapPrimaryBookRead(bookVO: PrimaryBookVO)
     fun onTapPrimaryBook(bookVO: PrimaryBookVO)
 }

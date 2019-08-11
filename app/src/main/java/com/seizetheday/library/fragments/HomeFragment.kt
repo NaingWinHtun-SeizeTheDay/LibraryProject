@@ -85,19 +85,14 @@ class HomeFragment : Fragment(), PrimaryBookDelegate, SecondaryBookDelegate {
     }
 
     //share button
-    override fun onTapPrimaryBookShare(book: PrimaryBookVO) {
-        startActivity(Intent().apply {
-            action = Intent.ACTION_SEND
-            type = "text/plain"
-            putExtra(Intent.EXTRA_TEXT, "Component link will be here.")
-        })
+    override fun onTapPrimaryBookRead(book: PrimaryBookVO) {
     }
 
     //whole book item
     override fun onTapPrimaryBook(book: PrimaryBookVO) {
 
         val intent = Intent(context, BookDetailActivity::class.java)
-        intent.putExtra("bookId", book.id.toInt())
+        intent.putExtra("bookId", book.id)
         startActivity(intent)
 
     }
@@ -111,15 +106,6 @@ class HomeFragment : Fragment(), PrimaryBookDelegate, SecondaryBookDelegate {
     //read button
     override fun onTapSecondaryBookRead(book: BookVO) {
         Toast.makeText(context, "Click secondary book read", Toast.LENGTH_SHORT).show()
-    }
-
-    //share button
-    override fun onTapSecondaryBookShare(book: BookVO) {
-        startActivity(Intent().apply {
-            action = Intent.ACTION_SEND
-            type = "text/plain"
-            putExtra(Intent.EXTRA_TEXT, "Component link will be here.")
-        })
     }
 
     //book cover image

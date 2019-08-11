@@ -88,7 +88,6 @@
 
         <FrameLayout
                 android:id="@+id/fl_book_read"
-                android:layout_weight="1"
                 android:layout_marginTop="@dimen/margin_medium_small"
                 android:clickable="true"
                 android:background="@color/defaultColorTransparent"

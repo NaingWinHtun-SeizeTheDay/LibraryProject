@@ -10,8 +10,6 @@ import com.seizetheday.library.network.responses.BookResponse
 import com.seizetheday.library.network.responses.CategoryResponse
 import com.seizetheday.library.network.responses.PrimaryBookResponse
 import com.seizetheday.library.utils.LibraryConstants.Companion.BASE_API
-import com.seizetheday.library.utils.LibraryConstants.Companion.PRIMARY_BOOK_API
-import com.seizetheday.library.utils.LibraryConstants.Companion.SECONDARY_BOOK_API
 import okhttp3.OkHttpClient
 import org.greenrobot.eventbus.EventBus
 import retrofit2.Call
@@ -53,21 +51,9 @@ class RetrofitDataAgent {
             .client(okHttpClient)
             .build()
 
-        val retrofitSecondaryBook = Retrofit.Builder()
-            .baseUrl(SECONDARY_BOOK_API)
-            .addConverterFactory(GsonConverterFactory.create())
-            .client(okHttpClient)
-            .build()
-
-        val retrofitPrimaryBook = Retrofit.Builder()
-            .baseUrl(PRIMARY_BOOK_API)
-            .addConverterFactory(GsonConverterFactory.create())
-            .client(okHttpClient)
-            .build()
-
         mCategoryAPI = retrofit.create(CategoryAPI::class.java)
-        mBookAPI = retrofitSecondaryBook.create(BookAPI::class.java)
-        mPrimaryBookAPI = retrofitPrimaryBook.create(PrimaryBookAPI::class.java)
+        mBookAPI = retrofit.create(BookAPI::class.java)
+        mPrimaryBookAPI = retrofit.create(PrimaryBookAPI::class.java)
 
     }
 
