@@ -27,7 +27,6 @@ import org.greenrobot.eventbus.Subscribe
 import org.greenrobot.eventbus.ThreadMode
 
 class HomeFragment : Fragment(), PrimaryBookDelegate, SecondaryBookDelegate {
-
     private lateinit var adapter: BookAdapter
 
     override fun onCreateView(
@@ -55,7 +54,6 @@ class HomeFragment : Fragment(), PrimaryBookDelegate, SecondaryBookDelegate {
             BookModel.getObjInstance().loadBooks()
             PrimaryBookModel.getObjInstance().loadPrimaryBook()
         }
-
     }
 
     override fun onAttach(context: Context?) {

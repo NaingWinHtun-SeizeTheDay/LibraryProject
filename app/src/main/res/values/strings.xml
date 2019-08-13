@@ -4,7 +4,8 @@
     <string name="demo_text" translatable="false">
         There are a lot of barriers to changing your mind: ego, overconfidence, inertia — and cost.
         Politicians who flip-flop get mocked; family and friends who cross tribal borders are shunned. But shouldn’t we
-        be encouraging people to change their minds?There are a lot of barriers to changing your mind: ego, overconfidence, inertia — and cost.
+        be encouraging people to change their minds?There are a lot of barriers to changing your mind: ego,
+        overconfidence, inertia — and cost.
         Politicians who flip-flop get mocked; family and friends who cross tribal borders are shunned. But shouldn’t we
         be encouraging people to change their minds?
     </string>
@@ -25,7 +26,7 @@
     <string name="number_sixty_six">66</string>
 
     <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="text_search">Search...</string>
+    <string name="text_search">Search</string>
     <string name="text_bookmark">BookMark</string>
     <string name="text_login">Login</string>
     <string name="text_password">Password</string>

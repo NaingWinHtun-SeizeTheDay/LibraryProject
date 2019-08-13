@@ -45,8 +45,8 @@ class PrimaryBookViewHolder(view: View) : BaseViewHolder(view) {
 
     }
 
-    override fun onBindData(book: PrimaryBookVO, view: View) {
-        mBook = book
+    override fun onBindData(books: PrimaryBookVO, view: View) {
+        mBook = books
         itemView.findViewById<TextView>(R.id.tv_primary_book_name).text = mBook.bookName
         itemView.findViewById<TextView>(R.id.tv_primary_book_author_name).text = mBook.authorName
         itemView.findViewById<TextView>(R.id.tv_primary_book_number).text = mBook.id.toString()
@@ -55,4 +55,5 @@ class PrimaryBookViewHolder(view: View) : BaseViewHolder(view) {
         //for text visibility
         view.findViewById<TextView>(R.id.tv_popular_title).visibility = View.VISIBLE
     }
+
 }

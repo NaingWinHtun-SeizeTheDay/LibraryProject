@@ -1,9 +1,9 @@
 package com.seizetheday.library.network.responses
 
 import com.google.gson.annotations.SerializedName
-import com.seizetheday.library.data.vos.CategoryVO
+import com.seizetheday.library.data.vos.SearchBookVO
 
-class CategoryResponse {
+class SearchResponse {
 
     @SerializedName("code")
     private val code: Int = 0
@@ -14,8 +14,8 @@ class CategoryResponse {
     @SerializedName("apiVersion")
     private val apiVersion: String? = null
 
-    @SerializedName("category")
-    private var category: MutableList<CategoryVO>? = null
+    @SerializedName("books")
+    private var books: MutableList<SearchBookVO>? = null
 
 
     fun getCode(): Int {
@@ -30,12 +30,12 @@ class CategoryResponse {
         return apiVersion
     }
 
-    fun getCategory(): MutableList<CategoryVO>? {
-        if (category == null) {
-            category = ArrayList()
+    fun getBook(): MutableList<SearchBookVO>? {
+        if (books == null) {
+            books = ArrayList()
         }
 
-        val obj = category
+        val obj = books
 
         return obj!!
 

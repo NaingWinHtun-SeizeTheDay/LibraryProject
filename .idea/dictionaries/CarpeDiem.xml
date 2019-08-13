@@ -2,6 +2,8 @@
   <dictionary name="CarpeDiem">
     <words>
       <w>popularbooks</w>
+      <w>searchbooks</w>
+      <w>seizetheday</w>
     </words>
   </dictionary>
 </component>

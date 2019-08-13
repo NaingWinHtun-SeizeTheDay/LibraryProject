@@ -11,6 +11,7 @@ class MainActivity : BaseActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+        setSupportActionBar(toolbar)
 
         vp_main.adapter = MainPagerAdapter(this, supportFragmentManager)
         tl_main.setupWithViewPager(vp_main)
@@ -24,5 +25,9 @@ class MainActivity : BaseActivity() {
             startActivity(Intent(this@MainActivity, ProfileActivity::class.java))
         }
 
+        //click to search activity
+        iv_search_activity.setOnClickListener {
+            startActivity(Intent(this@MainActivity, SearchActivity::class.java))
+        }
     }
 }
