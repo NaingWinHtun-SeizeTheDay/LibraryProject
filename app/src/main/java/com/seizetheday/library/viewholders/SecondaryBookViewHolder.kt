@@ -28,7 +28,12 @@ class SecondaryBookViewHolder(view: View) : BaseViewHolder(view) {
             mSecondaryBookDelegate.onTapSecondaryBookMark(mBook)
         }
 
-        //secondary book share
+        //secondary book read
+        itemView.findViewById<Button>(R.id.btn_secondary_book_read).setOnClickListener {
+            mSecondaryBookDelegate.onTapSecondaryBookRead(mBook)
+        }
+
+        //secondary book cover
         itemView.findViewById<ImageView>(R.id.iv_secondary_book_cover).setOnClickListener {
             mSecondaryBookDelegate.onTapSecondaryBookImage(mBook)
         }

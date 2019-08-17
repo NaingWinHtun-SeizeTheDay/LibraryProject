@@ -23,11 +23,6 @@ class PrimaryBookViewHolder(view: View) : BaseViewHolder(view) {
             primaryBookDelegate.onTapPrimaryBook(mBook)
         }
 
-        //download button
-        itemView.findViewById<Button>(R.id.btn_primary_book_download).setOnClickListener {
-            primaryBookDelegate.onTapPrimaryBookDownload(mBook)
-        }
-
         //share button
         itemView.findViewById<Button>(R.id.btn_primary_book_read).setOnClickListener {
             primaryBookDelegate.onTapPrimaryBookRead(mBook)
@@ -49,7 +44,6 @@ class PrimaryBookViewHolder(view: View) : BaseViewHolder(view) {
         mBook = books
         itemView.findViewById<TextView>(R.id.tv_primary_book_name).text = mBook.bookName
         itemView.findViewById<TextView>(R.id.tv_primary_book_author_name).text = mBook.authorName
-        itemView.findViewById<TextView>(R.id.tv_primary_book_number).text = mBook.id.toString()
         itemView.findViewById<TextView>(R.id.tv_primary_book_description).text = HtmlCompat.fromHtml(mBook.bookDescription,0)
         Glide.with(itemView).load(mBook.bookCover).into(itemView.findViewById(R.id.iv_primary_book_cover))
         //for text visibility

@@ -11,7 +11,7 @@ import android.view.ViewGroup
 import android.widget.Toast
 import com.seizetheday.library.R
 import com.seizetheday.library.activities.BookDetailActivity
-import com.seizetheday.library.activities.LoginActivity
+import com.seizetheday.library.activities.BookReadActivity
 import com.seizetheday.library.adapters.BookAdapter
 import com.seizetheday.library.data.models.BookModel
 import com.seizetheday.library.data.models.PrimaryBookModel
@@ -77,13 +77,11 @@ class HomeFragment : Fragment(), PrimaryBookDelegate, SecondaryBookDelegate {
         Toast.makeText(context, "Click Book Mark", Toast.LENGTH_SHORT).show()
     }
 
-    //book download
-    override fun onTapPrimaryBookDownload(book: PrimaryBookVO) {
-        startActivity(Intent(context, LoginActivity::class.java))
-    }
-
     //share button
     override fun onTapPrimaryBookRead(book: PrimaryBookVO) {
+        val intent = Intent(context, BookReadActivity::class.java)
+        intent.putExtra("bookUrl", book.id)
+        startActivity(intent)
     }
 
     //whole book item
@@ -103,7 +101,9 @@ class HomeFragment : Fragment(), PrimaryBookDelegate, SecondaryBookDelegate {
 
     //read button
     override fun onTapSecondaryBookRead(book: BookVO) {
-        Toast.makeText(context, "Click secondary book read", Toast.LENGTH_SHORT).show()
+        val intent = Intent(context, BookReadActivity::class.java)
+        intent.putExtra("bookUrl", book.id)
+        startActivity(intent)
     }
 
     //book cover image

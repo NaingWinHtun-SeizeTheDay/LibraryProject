@@ -29,7 +29,7 @@
     <!--custom-->
     <dimen name="divider_line_height">1sp</dimen>
     <dimen name="book_detail_cover_width">140sp</dimen>
-    <dimen name="book_detail_cover_height">240sp</dimen>
+    <dimen name="book_detail_cover_height">220sp</dimen>
     <dimen name="width_secondary_book_cover">120sp</dimen>
     <dimen name="logo_width_and_size">50sp</dimen>
     <dimen name="padding_zero">0sp</dimen>

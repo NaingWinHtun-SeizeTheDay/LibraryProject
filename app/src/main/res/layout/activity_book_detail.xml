@@ -85,8 +85,20 @@
                     android:textColor="@color/primary_black"/>
 
             <TextView
-                    android:layout_marginTop="@dimen/margin_medium"
+                    android:id="@+id/tv_book_detail_edition"
                     android:layout_below="@id/tv_book_detail_isbn"
+                    android:text="Edition : First Edition"
+                    android:textSize="@dimen/text_medium"
+                    android:layout_alignStart="@id/tv_book_detail_name"
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="@dimen/margin_small"
+                    android:textIsSelectable="true"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/primary_black"/>
+
+            <TextView
+                    android:layout_marginTop="@dimen/margin_medium"
+                    android:layout_below="@id/tv_book_detail_edition"
                     android:layout_alignStart="@id/tv_book_detail_name"
                     android:id="@+id/tv_book_detail_text"
                     android:textSize="@dimen/text_medium"
@@ -103,63 +115,17 @@
 
     </ScrollView>
 
-    <LinearLayout
+    <Button
+            android:id="@+id/btn_book_detail_read"
+            android:background="@color/colorPrimaryDarkTransparent"
+            android:textAllCaps="false"
             android:layout_gravity="bottom"
-            android:id="@+id/book_detail_buttons"
             android:layout_width="match_parent"
-            android:orientation="horizontal"
-            android:weightSum="2"
-            android:background="@color/colorPrimary"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="@drawable/ripple"
             android:layout_height="wrap_content"
-            android:baselineAligned="false">
+            android:textSize="@dimen/text_medium"
+            android:text="@string/text_read"/>
 
-        <FrameLayout
-                android:id="@+id/fl_book_detail_read"
-                android:layout_weight="1"
-                android:clickable="true"
-                android:focusable="true"
-                android:foreground="@drawable/ripple"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
-
-            <Button
-                    android:layout_gravity="center"
-                    android:id="@+id/btn_book_detail_read"
-                    android:background="@android:color/transparent"
-                    android:textAllCaps="false"
-                    android:layout_width="wrap_content"
-                    android:clickable="false"
-                    android:drawablePadding="@dimen/padding_small"
-                    android:layout_height="wrap_content"
-                    android:drawableStart="@drawable/ic_eye_black_24dp"
-                    android:textSize="@dimen/text_medium"
-                    android:text="@string/text_read"/>
-
-        </FrameLayout>
-
-        <FrameLayout
-                android:id="@+id/fl_book_detail_download"
-                android:layout_weight="1"
-                android:clickable="true"
-                android:focusable="true"
-                android:foreground="@drawable/ripple"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
-
-            <Button
-                    android:layout_gravity="center"
-                    android:id="@+id/btn_book_detail_download"
-                    android:background="@android:color/transparent"
-                    android:textAllCaps="false"
-                    android:layout_width="wrap_content"
-                    android:clickable="false"
-                    android:drawablePadding="@dimen/padding_small"
-                    android:layout_height="wrap_content"
-                    android:drawableStart="@drawable/ic_file_download_black_24dp"
-                    android:textSize="@dimen/text_medium"
-                    android:text="@string/text_download"/>
-
-        </FrameLayout>
-
-    </LinearLayout>
 </android.support.design.widget.CoordinatorLayout>

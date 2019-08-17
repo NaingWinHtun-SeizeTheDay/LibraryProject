@@ -14,6 +14,8 @@
             android:theme="@style/AppTheme.NoActionBarFullScreen"
             android:usesCleartextTraffic="true"
             tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name=".activities.BookReadActivity">
+        </activity>
         <activity android:name=".activities.SearchActivity">
         </activity>
         <activity

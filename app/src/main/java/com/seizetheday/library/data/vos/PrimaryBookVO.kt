@@ -18,5 +18,7 @@ data class PrimaryBookVO(
     @SerializedName("book_download_rate")
     val bookDownloadRate: String,
     @SerializedName("book_cover")
-    val bookCover: String
+    val bookCover: String,
+    @SerializedName("book")
+    val book: String
 )

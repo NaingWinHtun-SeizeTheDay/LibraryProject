@@ -3,7 +3,6 @@ package com.seizetheday.library.activities
 import android.content.Intent
 import android.os.Bundle
 import android.support.v4.text.HtmlCompat
-import android.widget.Toast
 import com.bumptech.glide.Glide
 import com.seizetheday.library.R
 import com.seizetheday.library.data.models.BookModel
@@ -42,20 +41,25 @@ class BookDetailActivity : BaseActivity() {
             finishAndRemoveTask()
         }
 
-        fl_book_detail_download.setOnClickListener {
-            startActivity(Intent(this@BookDetailActivity, LoginActivity::class.java))
-        }
-
-        fl_book_detail_read.setOnClickListener {
-            Toast.makeText(this, "Tap", Toast.LENGTH_SHORT).show()
+        btn_book_detail_read.setOnClickListener {
+            val intent = Intent(this@BookDetailActivity, BookReadActivity::class.java)
+            var bookUrl: Int
+            if (mBook != null) {
+                bookUrl = mBook.id
+            } else {
+                bookUrl = mPrimaryBook!!.id
+            }
+            intent.putExtra("bookUrl", bookUrl)
+            startActivity(intent)
         }
     }
 
     //bind data
     private fun onBindBookDetailData(book: BookVO) {
         tv_book_detail_name.text = book.bookName
-        tv_book_detail_author_name.text = book.authorName
+        tv_book_detail_author_name.text = "Author : " + book.authorName
         tv_book_detail_isbn.text = "ISBN : " + book.bookIsbn
+        tv_book_detail_edition.text = "Edition : " + book.bookEdition
         tv_book_detail_text.text = HtmlCompat.fromHtml(book.bookDescription, 0)
         Glide.with(this).load(book.bookCover).into(iv_book_detail_cover)
     }
@@ -63,7 +67,7 @@ class BookDetailActivity : BaseActivity() {
     //bind data
     private fun onBindPrimaryBookDetailData(book: PrimaryBookVO) {
         tv_book_detail_name.text = book.bookName
-        tv_book_detail_author_name.text = book.authorName
+        tv_book_detail_author_name.text = "Author : " + book.authorName
         tv_book_detail_isbn.text = "ISBN : " + book.bookIsbn
         tv_book_detail_text.text = HtmlCompat.fromHtml(book.bookDescription, 0)
         Glide.with(this).load(book.bookCover).into(iv_book_detail_cover)
