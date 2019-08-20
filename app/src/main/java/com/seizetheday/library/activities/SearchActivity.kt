@@ -1,21 +1,24 @@
 package com.seizetheday.library.activities
 
+import android.content.Intent
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.support.v7.widget.LinearLayoutManager
 import android.view.Menu
+import android.view.View
 import android.widget.SearchView
 import com.seizetheday.library.R
 import com.seizetheday.library.adapters.SearchAdapter
 import com.seizetheday.library.data.models.SearchBookModel
 import com.seizetheday.library.data.vos.SearchBookVO
+import com.seizetheday.library.delegates.SearchBookDelegate
 import com.seizetheday.library.events.SearchBookDataEvent
 import kotlinx.android.synthetic.main.activity_search.*
 import org.greenrobot.eventbus.EventBus
 import org.greenrobot.eventbus.Subscribe
 import org.greenrobot.eventbus.ThreadMode
 
-class SearchActivity : AppCompatActivity() {
+class SearchActivity : AppCompatActivity(), SearchBookDelegate {
 
     var searchBooks: MutableList<SearchBookVO> = ArrayList()
     var books: MutableList<SearchBookVO> = ArrayList()
@@ -29,8 +32,14 @@ class SearchActivity : AppCompatActivity() {
 
         rv_search.layoutManager = LinearLayoutManager(this)
 
-        rv_search.adapter = SearchAdapter(searchBooks)
+        rv_search.adapter = SearchAdapter(searchBooks, this)
 
+    }
+
+    override fun onTapSearchBook(searchBook: SearchBookVO) {
+        val intent = Intent(this, BookDetailActivity::class.java)
+        intent.putExtra("bookId", searchBook.id)
+        startActivity(intent)
     }
 
     override fun onStart() {
@@ -69,9 +78,19 @@ class SearchActivity : AppCompatActivity() {
                                 searchBooks.add(it)
                             }
                         }
+
+                        if (searchBooks.size == 0) {
+                            rl_empty_search.visibility = View.VISIBLE
+                        } else {
+                            rl_empty_search.visibility = View.GONE
+                        }
+
+                        rl_search.visibility = View.GONE
                         rv_search.adapter?.notifyDataSetChanged()
                     } else {
                         searchBooks.clear()
+                        rl_empty_search.visibility = View.GONE
+                        rl_search.visibility = View.VISIBLE
                         rv_search.adapter?.notifyDataSetChanged()
                     }
 

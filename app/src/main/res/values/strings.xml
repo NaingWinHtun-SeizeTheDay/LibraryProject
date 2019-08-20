@@ -64,4 +64,7 @@
     <string name="text_empty_category">Empty Category</string>
     <string name="text_empty_books">Empty Books</string>
     <string name="text_force_refresh">Pull down for reload</string>
+    <string name="not_match">We can\'t find anything match with your data.</string>
+    <string name="not_found">Not Found</string>
+    <string name="search">Search</string>
 </resources>

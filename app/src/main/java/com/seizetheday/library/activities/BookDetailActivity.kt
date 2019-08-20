@@ -43,13 +43,13 @@ class BookDetailActivity : BaseActivity() {
 
         btn_book_detail_read.setOnClickListener {
             val intent = Intent(this@BookDetailActivity, BookReadActivity::class.java)
-            var bookUrl: Int
+            var bookId: Int
             if (mBook != null) {
-                bookUrl = mBook.id
+                bookId = mBook.id
             } else {
-                bookUrl = mPrimaryBook!!.id
+                bookId = mPrimaryBook!!.id
             }
-            intent.putExtra("bookUrl", bookUrl)
+            intent.putExtra("bookUrl", bookId)
             startActivity(intent)
         }
     }

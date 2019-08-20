@@ -23,12 +23,82 @@
             app:layout_behavior="android.support.design.widget.AppBarLayout$ScrollingViewBehavior"
             android:layout_height="match_parent">
 
+        <RelativeLayout
+                android:visibility="gone"
+                android:id="@+id/rl_empty_search"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+        <ImageView
+                android:id="@+id/iv_empty_search"
+                android:src="@drawable/empty_search"
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/text_empty_image"/>
+
+        <TextView
+                android:id="@+id/tv_empty_book_mark_text"
+                android:layout_marginTop="@dimen/margin_medium"
+                android:text="@string/not_found"
+                android:layout_below="@id/iv_empty_search"
+                android:textSize="@dimen/text_medium"
+                android:textStyle="bold"
+                android:paddingEnd="@dimen/padding_medium"
+                android:paddingStart="@dimen/padding_medium"
+                android:textColor="@color/primary_black"
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        <TextView
+                android:layout_below="@id/tv_empty_book_mark_text"
+                android:layout_width="match_parent"
+                android:id="@+id/tv_book_mark_error_message"
+                android:textSize="@dimen/text_medium"
+                android:textAlignment="center"
+                android:textColor="@color/primary_text"
+                android:paddingStart="@dimen/padding_large"
+                android:paddingEnd="@dimen/padding_large"
+                android:layout_marginTop="@dimen/margin_medium"
+                android:text="@string/not_match"
+                android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+
+        <RelativeLayout
+                android:id="@+id/rl_search"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            <ImageView
+                    android:id="@+id/iv_search"
+                    android:src="@drawable/empty_search"
+                    android:layout_centerInParent="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/text_empty_image"/>
+
+            <TextView
+                    android:id="@+id/tv_search"
+                    android:layout_marginTop="@dimen/margin_medium"
+                    android:text="@string/search"
+                    android:layout_below="@id/iv_search"
+                    android:textSize="@dimen/text_medium"
+                    android:textStyle="bold"
+                    android:paddingEnd="@dimen/padding_medium"
+                    android:paddingStart="@dimen/padding_medium"
+                    android:textColor="@color/primary_black"
+                    android:layout_centerHorizontal="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+        </RelativeLayout>
 
         <android.support.v7.widget.RecyclerView
                 android:id="@+id/rv_search"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
-        </android.support.v7.widget.RecyclerView>
+                android:layout_height="match_parent"/>
 
     </RelativeLayout>
 
