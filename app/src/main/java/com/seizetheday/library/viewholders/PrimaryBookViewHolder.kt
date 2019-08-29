@@ -28,11 +28,6 @@ class PrimaryBookViewHolder(view: View) : BaseViewHolder(view) {
             primaryBookDelegate.onTapPrimaryBookRead(mBook)
         }
 
-        //book mark button
-        itemView.findViewById<ImageView>(R.id.fab_primary_book_mark).setOnClickListener {
-            primaryBookDelegate.onTapPrimaryBookMark(mBook)
-        }
-
         //image
         itemView.findViewById<ImageView>(R.id.iv_primary_book_cover).setOnClickListener {
             primaryBookDelegate.onTapPrimaryBookImage(mBook)

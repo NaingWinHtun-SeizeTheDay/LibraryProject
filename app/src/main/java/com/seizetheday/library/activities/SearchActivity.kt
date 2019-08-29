@@ -62,7 +62,7 @@ class SearchActivity : AppCompatActivity(), SearchBookDelegate {
 
             val searchView = searchItem.actionView as SearchView
             searchView.maxWidth = Int.MAX_VALUE
-            searchView.queryHint = "Search Here"
+            searchView.queryHint = "Search your books"
 
             searchView.setOnQueryTextListener(object : SearchView.OnQueryTextListener {
                 override fun onQueryTextSubmit(query: String?): Boolean {

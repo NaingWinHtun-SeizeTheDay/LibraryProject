@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+                android:layout_width="match_parent"
+                app:contentScrim="@color/colorPrimary"
+                android:layout_height="wrap_content">
+
+            <ImageView
+                    android:id="@+id/imageViewCollapsing"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/profile_image_height"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/books_glasses_vase"
+                    android:contentDescription="@string/text_profile_cover"/>
+
+            <android.support.v7.widget.Toolbar
+                    app:layout_collapseMode="pin"
+                    android:layout_width="match_parent"
+                    android:layout_gravity="bottom"
+                    app:titleTextColor="@color/primary_white"
+                    android:layout_height="?attr/actionBarSize">
+
+                <TextView
+                        android:layout_centerVertical="true"
+                        android:textSize="@dimen/text_large"
+                        style="@style/WhiteShadow"
+                        android:id="@+id/tv_app_name"
+                        android:text="@string/app_name"
+                        android:textStyle="bold"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+            </android.support.v7.widget.Toolbar>
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v7.widget.CardView
+            app:layout_behavior="android.support.design.widget.AppBarLayout$ScrollingViewBehavior"
+            app:cardUseCompatPadding="true"
+            android:id="@+id/cv_profile_detail"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <RelativeLayout
+                android:orientation="vertical"
+                android:weightSum="3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            <TextView
+                    android:id="@+id/tv_version"
+                    android:layout_marginTop="@dimen/margin_medium_small"
+                    android:layout_marginLeft="@dimen/margin_medium_small"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/text_medium"
+                    android:text="@string/version"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            <TextView
+                    android:id="@+id/tv_version_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_version"
+                    android:layout_alignLeft="@id/tv_site"
+                    android:text="Version : 1.0.0"
+                    android:layout_marginTop="@dimen/margin_medium_small"
+                    android:layout_marginLeft="@dimen/margin_medium_small"/>
+
+            <TextView
+                    android:layout_below="@id/tv_version_number"
+                    android:id="@+id/tv_site"
+                    android:layout_marginTop="@dimen/margin_medium_small"
+                    android:layout_marginLeft="@dimen/margin_medium_small"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/text_medium"
+                    android:text="@string/text_our_website"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            <TextView
+                    android:id="@+id/tv_site_link"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_site"
+                    android:layout_alignLeft="@id/tv_site"
+                    android:text="@string/site_link"
+                    android:linksClickable="true"
+                    android:textIsSelectable="true"
+                    android:textColor="@android:color/holo_blue_dark"
+                    android:layout_marginTop="@dimen/margin_medium_small"
+                    android:layout_marginLeft="@dimen/margin_medium_small"/>
+
+            <TextView
+                    android:layout_below="@id/tv_site_link"
+                    android:id="@+id/tv_contact_us"
+                    android:layout_marginTop="@dimen/margin_medium_small"
+                    android:layout_marginLeft="@dimen/margin_medium_small"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/text_medium"
+                    android:text="@string/contact_us"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            <TextView
+                    android:id="@+id/tv_contact_mail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_contact_us"
+                    android:layout_alignLeft="@id/tv_site_link"
+                    android:text="@string/text_mail"
+                    android:textIsSelectable="true"
+                    android:linksClickable="true"
+                    android:textColor="@android:color/holo_blue_dark"
+                    android:layout_marginTop="@dimen/margin_medium_small"/>
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</android.support.design.widget.CoordinatorLayout>

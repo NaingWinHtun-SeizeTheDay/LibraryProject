@@ -2,6 +2,7 @@
       xmlns:app="http://schemas.android.com/apk/res-auto"
       xmlns:tools="http://schemas.android.com/tools"
       tools:context="com.seizetheday.myapplication.MainActivity">
+
     <item android:id="@+id/action_search"
           android:title="@string/text_search"
           android:icon="@drawable/ic_search_primary_color_24dp"

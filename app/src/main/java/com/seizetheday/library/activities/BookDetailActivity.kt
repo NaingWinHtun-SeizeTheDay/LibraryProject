@@ -41,15 +41,24 @@ class BookDetailActivity : BaseActivity() {
             finishAndRemoveTask()
         }
 
+        //book read
         btn_book_detail_read.setOnClickListener {
             val intent = Intent(this@BookDetailActivity, BookReadActivity::class.java)
-            var bookId: Int
-            if (mBook != null) {
-                bookId = mBook.id
-            } else {
-                bookId = mPrimaryBook!!.id
-            }
+            var bookId: Int = mBook?.id ?: mPrimaryBook!!.id
             intent.putExtra("bookUrl", bookId)
+            startActivity(intent)
+        }
+
+        //book share
+        btn_book_detail_share.setOnClickListener {
+
+            var bookLink: String = mBook?.book ?: mPrimaryBook!!.book
+
+            val intent = Intent().apply {
+                action = Intent.ACTION_SEND
+                type = "text/plain"
+                putExtra(Intent.EXTRA_TEXT, bookLink)
+            }
             startActivity(intent)
         }
     }

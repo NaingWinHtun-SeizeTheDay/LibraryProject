@@ -68,27 +68,27 @@ class HomeFragment : Fragment(), PrimaryBookDelegate, SecondaryBookDelegate {
 
     //from primary delegate
     //book cover image
-    override fun onTapPrimaryBookImage(book: PrimaryBookVO) {
+    override fun onTapPrimaryBookImage(bookVO: PrimaryBookVO) {
         Toast.makeText(context, "Click Image", Toast.LENGTH_SHORT).show()
     }
 
     //book mark
-    override fun onTapPrimaryBookMark(book: PrimaryBookVO) {
+    override fun onTapPrimaryBookMark(bookVO: PrimaryBookVO) {
         Toast.makeText(context, "Click Book Mark", Toast.LENGTH_SHORT).show()
     }
 
     //share button
-    override fun onTapPrimaryBookRead(book: PrimaryBookVO) {
+    override fun onTapPrimaryBookRead(bookVO: PrimaryBookVO) {
         val intent = Intent(context, BookReadActivity::class.java)
-        intent.putExtra("bookUrl", book.id)
+        intent.putExtra("bookUrl", bookVO.id)
         startActivity(intent)
     }
 
     //whole book item
-    override fun onTapPrimaryBook(book: PrimaryBookVO) {
+    override fun onTapPrimaryBook(bookVO: PrimaryBookVO) {
 
         val intent = Intent(context, BookDetailActivity::class.java)
-        intent.putExtra("bookId", book.id)
+        intent.putExtra("bookId", bookVO.id)
         startActivity(intent)
 
     }

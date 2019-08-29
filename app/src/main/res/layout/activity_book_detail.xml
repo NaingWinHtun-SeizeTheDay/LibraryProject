@@ -32,7 +32,7 @@
 
         <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="wrap_content">
 
             <ImageView
                     android:id="@+id/iv_book_detail_cover"
@@ -87,7 +87,7 @@
             <TextView
                     android:id="@+id/tv_book_detail_edition"
                     android:layout_below="@id/tv_book_detail_isbn"
-                    android:text="Edition : First Edition"
+                    tools:text="@string/edition"
                     android:textSize="@dimen/text_medium"
                     android:layout_alignStart="@id/tv_book_detail_name"
                     android:layout_width="wrap_content"
@@ -115,17 +115,39 @@
 
     </ScrollView>
 
-    <Button
-            android:id="@+id/btn_book_detail_read"
-            android:background="@color/colorPrimaryDarkTransparent"
-            android:textAllCaps="false"
-            android:layout_gravity="bottom"
+    <LinearLayout
+            android:orientation="horizontal"
+            android:weightSum="2"
             android:layout_width="match_parent"
-            android:clickable="true"
-            android:focusable="true"
-            android:foreground="@drawable/ripple"
-            android:layout_height="wrap_content"
-            android:textSize="@dimen/text_medium"
-            android:text="@string/text_read"/>
+            android:layout_gravity="bottom"
+            android:layout_height="wrap_content">
+
+        <Button
+                android:id="@+id/btn_book_detail_read"
+                android:background="@color/colorPrimaryDarkTransparent"
+                android:textAllCaps="false"
+                android:layout_width="match_parent"
+                android:clickable="true"
+                android:focusable="true"
+                android:layout_weight="1"
+                android:foreground="@drawable/ripple"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_medium"
+                android:text="@string/text_read"/>
+
+        <Button
+                android:id="@+id/btn_book_detail_share"
+                android:background="@color/colorPrimaryDarkTransparent"
+                android:textAllCaps="false"
+                android:layout_width="match_parent"
+                android:clickable="true"
+                android:layout_weight="1"
+                android:focusable="true"
+                android:foreground="@drawable/ripple"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_medium"
+                android:text="@string/text_share"/>
+
+    </LinearLayout>
 
 </android.support.design.widget.CoordinatorLayout>

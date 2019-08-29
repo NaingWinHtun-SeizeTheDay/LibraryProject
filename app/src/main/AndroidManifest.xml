@@ -19,7 +19,7 @@
         <activity android:name=".activities.SearchActivity">
         </activity>
         <activity
-                android:name=".activities.ProfileActivity"
+                android:name=".activities.InfoActivity"
                 android:screenOrientation="portrait">
         </activity>
         <activity

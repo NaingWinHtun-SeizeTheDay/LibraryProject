@@ -23,7 +23,7 @@ class BookReadActivity : AppCompatActivity() {
         var pdfUrl = ""
 
         if (mBook != null) {
-            pdfUrl = mBook?.book
+            pdfUrl = mBook.book
         } else if (mPrimaryBook != null) {
             pdfUrl = mPrimaryBook.book
         }

@@ -22,7 +22,7 @@ class MainActivity : BaseActivity() {
 
         //click to profile activity
         iv_profile_main.setOnClickListener {
-            startActivity(Intent(this@MainActivity, ProfileActivity::class.java))
+            startActivity(Intent(this@MainActivity, InfoActivity::class.java))
         }
 
         //click to search activity

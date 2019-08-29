@@ -23,11 +23,6 @@ class SecondaryBookViewHolder(view: View) : BaseViewHolder(view) {
             mSecondaryBookDelegate.onTapSecondaryBook(mBook)
         }
 
-        //secondary book mark
-        itemView.findViewById<Button>(R.id.btn_secondary_book_mark).setOnClickListener {
-            mSecondaryBookDelegate.onTapSecondaryBookMark(mBook)
-        }
-
         //secondary book read
         itemView.findViewById<Button>(R.id.btn_secondary_book_read).setOnClickListener {
             mSecondaryBookDelegate.onTapSecondaryBookRead(mBook)
@@ -40,8 +35,8 @@ class SecondaryBookViewHolder(view: View) : BaseViewHolder(view) {
     }
 
     //set data into view holders
-    override fun onBindData(book: BookVO, view: View) {
-        mBook = book
+    override fun onBindData(books: BookVO, view: View) {
+        mBook = books
         itemView.findViewById<TextView>(R.id.tv_secondary_book_name).text = mBook.bookName
         itemView.findViewById<TextView>(R.id.tv_secondary_book_author_name).text = mBook.authorName
         itemView.findViewById<TextView>(R.id.tv_secondary_book_description).text =

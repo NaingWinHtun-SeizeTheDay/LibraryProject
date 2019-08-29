@@ -44,7 +44,7 @@
     <string name="text_blank_image_view">Blank Image View</string>
     <string name="text_profile_icon">Profile Icon</string>
     <string name="text_book_mark_cover">Profile Book mark cover.</string>
-    <string name="text_mail">someone@something.com</string>
+    <string name="text_mail">senaingwinhtun@gmail.com</string>
     <string name="text_profile_cover">Profile cover image</string>
     <string name="user_name">User Name</string>
     <string name="text_user">Mg Someone</string>
@@ -67,4 +67,9 @@
     <string name="not_match">We can\'t find anything match with your data.</string>
     <string name="not_found">Not Found</string>
     <string name="search">Search</string>
+    <string name="text_our_website">Our Website</string>
+    <string name="site_link">http://library.psfdns.tk</string>
+    <string name="contact_us">Contact Us</string>
+    <string name="version">Version</string>
+    <string name="edition">Edition : First Edition</string>
 </resources>
